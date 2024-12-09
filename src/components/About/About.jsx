@@ -14,10 +14,8 @@ export default function AboutSection() {
         </div>
         </div>
       <div className={styles.gradientBg}>
-          <p className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <p className={styles.description}>
+               A Hivelancers é uma plataforma, desenvolvida por freelancers para freelancers, com o objetivo de simplificar e aprimorar a conexão entre usuários e prestadores de serviços.
             </p>
       </div>
     </section>
