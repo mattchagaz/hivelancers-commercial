@@ -46,6 +46,8 @@
 
 .buttons {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 5px;
 }
 
@@ -58,25 +60,40 @@
     border: none;
     padding: 10px 20px;
     border-radius: 50px;
-    color: rgba(173, 173, 173, 0.862);  
+    background-color: #fff;
+    border: 2px solid #ffffffa4;
+    color: black;  
     cursor: pointer;
     font-weight: bold;
-    transition: 0.1s ease-in-out;
-    
+    transition: 0.2s ease-in-out;
 } 
 
+.btnLogin:hover {
+    background-color: rgba(0, 0, 0, 0.717);
+    color: rgba(255, 255, 255, 0.787);
+}
+
 .btnSignup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
-    border: 1px solid rgba(173, 173, 173, 0.862);
+    border: 2px solid rgba(173, 173, 173, 0.862);
     padding: 10px 20px;
     border-radius: 50px;
     color: rgba(173, 173, 173, 0.862);
     cursor: pointer;
     font-weight: bold;
     transition: 0.2s ease-in-out;
+    gap: 3px;
+}
+
+.btnSignup svg {
+    font-size: 16px;
+    font-weight: bolder;
 }
 
 .btnSignup:hover {
-    background-color: rgba(173, 173, 173, 0.862);
-    color: rgba(0, 0, 0, 0.717);
+    background-color: rgba(0, 0, 0, 0.717);
+    color: rgba(255, 255, 255, 0.787);
 }

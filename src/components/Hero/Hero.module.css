@@ -1,0 +1,183 @@
+.container {
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    opacity: 0.3;
+    top: -25%;
+    left: -25%;
+    animation: pulse 8s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  .content {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 4rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2.18rem;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .primaryButton:hover,
+  .secondaryButton:hover {
+    transform: translateY(-2px);
+  }
+  
+  .primaryButton {
+    background-color: white;
+    color: #000;
+    border: none;
+  }
+  
+  .secondaryButton {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+  }
+
+  .secondaryButton:hover {
+    background-color: #363636a5;
+  }
+  
+  .browserFrame {
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 12px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  .browserHeader {
+    background: #f1f1f1;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .browserControls {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .browserDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+  }
+  
+  .browserDot:nth-child(1) { background: #ff5f57; }
+  .browserDot:nth-child(2) { background: #ffbd2e; }
+  .browserDot:nth-child(3) { background: #28c940; }
+  
+  .browserAddressBar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    height: 28px;
+    background: white;
+    border-radius: 4px;
+  }
+
+  .browserAddressContent {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.4px;
+    margin-left: 10px;
+  }
+  
+  .browserActions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .browserAction {
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 4px;
+  }
+  
+  .browserContent {
+    height: 400px;
+    background: linear-gradient(180deg, #fff 0%, #f5f5f5 100%);
+  }
+
+  .browserContent img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    object-fit: fill;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+      padding: 0 1rem;
+    }
+  
+    .buttonGroup {
+      flex-direction: column;
+      padding: 0 2rem;
+    }
+  
+    .browserFrame {
+      margin-top: 2rem;
+    }
+  }
+  
+  
