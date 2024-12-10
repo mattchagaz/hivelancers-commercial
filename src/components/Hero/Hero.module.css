@@ -28,7 +28,7 @@
     text-align: center;
     position: relative;
     z-index: 999;
-    margin-top: 4rem;
+    margin-top: 7rem;
   }
   
   .title {
@@ -72,11 +72,11 @@
   .secondaryButton {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
     padding: 0.75rem 1.5rem;
     border-radius: 15px;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.9rem;
+    font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s ease;
   }
@@ -186,7 +186,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-
     object-fit: fill;
   }
   

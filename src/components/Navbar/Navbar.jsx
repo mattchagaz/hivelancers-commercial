@@ -4,9 +4,6 @@ import { LuArrowUpRight } from "react-icons/lu";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
-
-
 const Navbar = () => { 
     AOS.init();
     return (
