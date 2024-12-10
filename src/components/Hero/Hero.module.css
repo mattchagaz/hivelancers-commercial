@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 .container {
     background-image: url(../src/assets/background4.jpg);
     background-size: cover;
@@ -39,12 +41,31 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .description {
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+    color: #f5f5f5ad;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    line-height: 1.2;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   .buttonGroup {
     display: flex;
     gap: 1rem;
     justify-content: center;
     margin-bottom: 2.18rem;
+  }
+
+  .buttonGroup a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
   }
   
   .primaryButton,
@@ -124,6 +145,16 @@
     height: 28px;
     background: white;
     border-radius: 4px;
+  }
+
+  .browserAddressBar a {
+    color: #333;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+  }
+
+  .browserAddressBar a:hover {
+    color: rgba(0,96,199,1);
   }
 
   .browserAddressContent {

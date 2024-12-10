@@ -26,8 +26,8 @@ const Navbar = () => {
                 </ul>
             </nav>
             <div className={styles.buttons}>
-                <a href="https://www.google.com"><button className={styles.btnLogin}>Entrar</button></a>
-                <a href="https://www.google.com"><button className={styles.btnSignup}>Cadastrar <LuArrowUpRight /></button></a>
+                <a href="https://hivelancers.vercel.app/Login"><button className={styles.btnLogin}>Entrar</button></a>
+                <a href="https://hivelancers.vercel.app/Signup"><button className={styles.btnSignup}>Cadastrar <LuArrowUpRight /></button></a>
             </div>
         </div>
     )

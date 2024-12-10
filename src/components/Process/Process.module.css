@@ -1,0 +1,121 @@
+.processSection {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  position: relative;
+  box-shadow: 0px -8px 50px 0px rgba(0, 96, 199, 0.804);
+}
+
+.processContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6rem;
+}
+
+.label {
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.label::before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  display: inline-block;
+}
+
+.title {
+  font-size: 1.65rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: #666;
+  max-width: 350px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.steps {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.step {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.stepActive {
+  background-color: #4169e1;
+}
+
+.button {
+  background-color: #4169e1;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #3157d5;
+}
+
+.deviceMockup {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.laptop {
+  width: 800px; 
+  height: auto;
+}
+
+.screenContent {
+  position: absolute;
+  top: 5.5%; 
+  left: 11.5%; 
+  width: 77%; 
+  height: 83%; 
+  object-fit: cover; 
+  border-radius: 3px; 
+}
+
+.accent {
+  position: absolute;
+  width: 180px; 
+  height: 180px; 
+  background-color: #4169e1;
+  opacity: 0.2;
+  border-radius: 10px;
+}
+
+.accentTop {
+  top: -50px; 
+  right: -50px; 
+}
+
+.accentBottom {
+  height: 90px; 
+  bottom: 80px; 
+  left: 5px;
+}
+

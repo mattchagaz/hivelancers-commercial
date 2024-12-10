@@ -11,13 +11,20 @@ export default function Hero() {
         <h1 className={styles.title}>
           Conecte-se aos Melhores Freelancers em Minutos
         </h1>
+        <p className={styles.description}>
+          Deixe para trás a complicação de múltiplas plataformas. Encontre projetos, gerencie clientes e receba pagamentos diretamente no mesmo lugar.
+          </p>
         <div className={styles.buttonGroup}>
-          <button className={styles.primaryButton}>
-           <FaSearch /> Encontre Freelancers
-          </button>
-          <button className={styles.secondaryButton}>
-          <FiFileText /> Publique seu Projeto
-          </button>
+          <a href="https://hivelancers.vercel.app/Login">
+            <button className={styles.primaryButton}>
+             <FaSearch /> Encontre Freelancers
+            </button>
+          </a>
+          <a href="https://hivelancers.vercel.app/Login">
+            <button className={styles.secondaryButton}>
+            <FiFileText /> Publique seu Projeto
+            </button>
+          </a>
         </div>
       </div>
       <div className={styles.browserFrame}>
@@ -28,7 +35,9 @@ export default function Hero() {
             <span className={styles.browserDot}></span>
           </div>
           <div className={styles.browserAddressBar}>
-            <p className={styles.browserAddressContent}>www.hivelancers.com</p>
+            <a href="https://hivelancers.vercel.app/Login">
+              <p className={styles.browserAddressContent}>www.hivelancers.com</p>
+            </a>
           </div>
           <div className={styles.browserActions}>
             <span className={styles.browserAction}></span>
