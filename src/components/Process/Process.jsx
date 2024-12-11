@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './process.module.css';
-import laptop from '../../assets/laptop-mockup-png-png-image-916081.png';
+import laptop from '../../assets/Macbook.png';
 import screenContent1 from '../../assets/Screenshot 2024-12-09 at 16.14.08.png';
 import screenContent2 from '../../assets/Screenshot 2024-12-09 at 20.33.34.png';
 import screenContent3 from '../../assets/Screenshot 2024-12-09 at 16.13.30.png';
@@ -42,7 +42,7 @@ export default function ProcessSection() {
   return (
     <section className={styles.processSection}>
       <div className={styles.processContent}>
-        <div>
+        <div className={styles.leftContent}>
           <div className={styles.label}>Processos</div>
           <div className={styles.steps}>
             {processes.map((_, index) => (
