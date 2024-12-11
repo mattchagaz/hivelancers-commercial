@@ -1,23 +1,65 @@
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import styles from './process.module.css';
 import laptop from '../../assets/laptop-mockup-png-png-image-916081.png';
-import screenContent from '../../assets/Screenshot 2024-12-09 at 20.33.34.png'; 
+import screenContent1 from '../../assets/Screenshot 2024-12-09 at 16.14.08.png';
+import screenContent2 from '../../assets/Screenshot 2024-12-09 at 20.33.34.png';
+import screenContent3 from '../../assets/Screenshot 2024-12-09 at 16.13.30.png';
+import screenContent4 from '../../assets/Screenshot 2024-12-09 at 20.33.34.png';
+import screenContent5 from '../../assets/Screenshot 2024-12-09 at 20.33.34.png';
+
+const processes = [
+  {
+    title: "Cadastro do Usuário",
+    description: "Crie sua conta na plataforma HiveLancers para começar sua jornada.",
+    image: screenContent1
+  },
+  {
+    title: "Configurações do Perfil",
+    description: "Personalize seu perfil com suas habilidades e experiências para se destacar.",
+    image: screenContent2
+  },
+  {
+    title: "Busca de Projetos",
+    description: "Explore uma variedade de projetos que combinam com suas habilidades.",
+    image: screenContent3
+  },
+  {
+    title: "Proposta e Contratação",
+    description: "Envie propostas para projetos e inicie sua colaboração com clientes.",
+    image: screenContent4
+  },
+  {
+    title: "Conclusão",
+    description: "Complete seus projetos e construa sua reputação na plataforma.",
+    image: screenContent5
+  }
+];
 
 export default function ProcessSection() {
+  const [activeStep, setActiveStep] = useState(0);
+
   return (
     <section className={styles.processSection}>
       <div className={styles.processContent}>
         <div>
           <div className={styles.label}>Processos</div>
           <div className={styles.steps}>
-            <div className={`${styles.step} ${styles.stepActive}`}></div>
-            <div className={styles.step}></div>
-            <div className={styles.step}></div>
-            <div className={styles.step}></div>
+            {processes.map((_, index) => (
+              <div 
+                key={index}
+                className={`${styles.step} ${index === activeStep ? styles.stepActive : ''}`}
+                onClick={() => setActiveStep(index)}
+              >
+                <div className={styles.stepNumber}>
+                  {String(index + 1).padStart(2, '0')}
+                </div>
+              </div>
+            ))}
           </div>
-          <h2 className={styles.title}>Configurações do Perfil</h2>
+          <h2 className={styles.title}>{processes[activeStep].title}</h2>
           <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua.
+            {processes[activeStep].description}
           </p>
           <a href="https://hivelancers.vercel.app/Login">
             <button className={styles.button}>Cadastrar-se Agora</button>
@@ -29,11 +71,18 @@ export default function ProcessSection() {
             alt="Laptop mockup" 
             className={styles.laptop}
           />
-          <img 
-            src={screenContent} 
-            alt="Screen content" 
-            className={styles.screenContent}
-          />
+          <AnimatePresence mode="wait">
+            <motion.img 
+              key={activeStep}
+              src={processes[activeStep].image}
+              alt={`Screen content for ${processes[activeStep].title}`}
+              className={styles.screenContent}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            />
+          </AnimatePresence>
           <div className={`${styles.accent} ${styles.accentTop}`}></div>
           <div className={`${styles.accent} ${styles.accentBottom}`}></div>
         </div>
