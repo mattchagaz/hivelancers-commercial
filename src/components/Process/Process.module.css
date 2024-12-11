@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .processSection {
   background-color: #fff;
   position: relative;
@@ -18,9 +20,10 @@
 }
 
 .label {
-  color: #000;
-  font-size: 0.8rem;
-  font-weight: bolder;
+  color: #121212;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 2rem;
   display: flex;
@@ -34,20 +37,6 @@
   height: 2px;
   background-color: #000;
   display: inline-block;
-}
-
-.title {
-  font-size: 1.65rem;
-  font-weight: bold;
-  color: #000;
-  margin-bottom: 1.5rem;
-}
-
-.description {
-  color: #666;
-  max-width: 350px;
-  line-height: 1.6;
-  margin-bottom: 2rem;
 }
 
 .steps {
@@ -64,6 +53,7 @@
 }
 
 .stepNumber {
+  font-family: "Poppins", sans-serif;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -72,10 +62,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.875rem;
+  font-size: 10.32px;
   color: #666;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+
+.stepNumber:hover {
+  background-color: #3157d5;
+  border-color: #3157d5;
+  color: #fff;
 }
 
 .step:not(:last-child)::after {
@@ -88,19 +84,37 @@
 }
 
 .stepActive .stepNumber {
-  background-color: #4169e1;
-  border-color: #4169e1;
+  background-color: #3E73E6; 
+  border-color: #3E73E6;
   color: #fff;
 }
 
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color:#121212BF;
+  max-width: 350px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
 .button {
-  background-color: #4169e1;
+  background-color: #3E73E6;
+  font-family: "Poppins", sans-serif; 
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 30px;
   border: none;
   cursor: pointer;
-  font-size: 0.875rem;
   transition: background-color 0.2s;
 }
 

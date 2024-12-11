@@ -57,12 +57,12 @@
 }
 
 .buttons a {
+    border-radius: 30px; 
     text-decoration: none;
 }
 
 .btnLogin {
     background-color: transparent;
-    border: none;
     padding: 10px 20px;
     border-radius: 50px;
     background-color: #fff;
