@@ -2,7 +2,6 @@
   background-color: #fff;
   padding: 4rem 2rem;
   position: relative;
-  box-shadow: 0px -8px 50px 0px rgba(0, 96, 199, 0.804);
 }
 
 .processContent {
@@ -129,10 +128,12 @@
   position: absolute;
   width: 180px; 
   height: 180px; 
-  background-color: #4169e1;
-  opacity: 0.2;
-  border-radius: 10px;
+  background-color: rgba(62, 115, 230, 0.47); /* Transparência ajustada */
+  backdrop-filter: blur(10px); /* Aplica o desfoque ao fundo */
+  border-radius: 10px; /* Suaviza os cantos */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para o efeito 3D */
 }
+
 
 .accentTop {
   top: -50px; 

@@ -8,7 +8,7 @@ export default function Hero() {
 
     <div className={styles.container}>
       <div className={styles.content}>
-        <h1 data-aos="fade-in" data-aos-duration="3000" className={styles.title}>
+        <h1 className={styles.title}>
           Conecte-se aos Melhores Freelancers em Minutos
         </h1>
         <p className={styles.description}>

@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 .container {
-    background-image: url(../src/assets/background4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+  background-image: url(../../assets/background.png), 
+                    linear-gradient(to top, #121212 0%, #121212 100%);
+  background-color: #121212; /* Fallback para navegadores antigos */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 130vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+  
   @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
@@ -32,7 +36,8 @@
   }
   
   .title {
-    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.12rem;
     font-weight: 700;
     color: white;
     margin-bottom: 2rem;
@@ -43,7 +48,7 @@
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: "Raleway", sans-serif;
     color: #f5f5f5ad;
     font-weight: 400;
@@ -58,7 +63,7 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-bottom: 2.18rem;
+    margin-bottom: 4rem;
   }
 
   .buttonGroup a {
@@ -108,7 +113,7 @@
     max-width: 1200px;
     background: white;
     border-radius: 12px;
-    height: 600px;
+    height: 640px;
     overflow: hidden;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
   }

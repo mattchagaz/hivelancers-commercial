@@ -8,9 +8,9 @@ const Navbar = () => {
     AOS.init();
     return (
         <div className={styles.navbar}>
-            <div data-aos="fade-left" data-aos-duration="1000" className={styles.logo}>Hivelancers</div>
+            <div  className={styles.logo}>Hivelancers</div>
             <nav className={styles.nav}>
-                <ul data-aos="fade-down" data-aos-duration="1000" className={styles.navItems}>
+                <ul className={styles.navItems}>
                     <li><a href="#">Início</a></li>
                     <li><a href="#">Sobre nós</a></li>
                     <li><a href="#">Processos</a></li>
@@ -22,7 +22,7 @@ const Navbar = () => {
                     <li><a href="#">Suporte</a></li>
                 </ul>
             </nav>
-            <div data-aos="fade-right" data-aos-duration="1000" className={styles.buttons}>
+            <div className={styles.buttons}>
                 <a href="https://hivelancers.vercel.app/Login"><button className={styles.btnLogin}>Entrar</button></a>
                 <a href="https://hivelancers.vercel.app/Signup"><button className={styles.btnSignup}>Cadastrar <LuArrowUpRight /></button></a>
             </div>
