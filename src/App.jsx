@@ -6,6 +6,7 @@ import Process from './components/Process/Process'
 import PrincipalAreas from './components/PrincipalAreas/PrincipalAreas'
 import Footer from './components/Footer/Footer'
 import Faq from './components/Faq/Faq'
+import Advantages from './components/Advantages/Advantages'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <About />
         <Process />
         <PrincipalAreas />
+        <Advantages />
         <Faq />
         <Footer />
       </div>
