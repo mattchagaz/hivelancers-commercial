@@ -19,9 +19,10 @@
 }
 
 .logo {
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: bolder;
-    color: #fff;
+    color: #9fbdfd;
 }
 
 .navItems {
@@ -69,7 +70,7 @@
     background-color: transparent;
     padding: 10px 20px;
     border-radius: 50px;
-    background-color: #fff;
+    background-color: #e1e9fc;
     border: 2px solid #ffffffa4;
     color: black;  
     cursor: pointer;
