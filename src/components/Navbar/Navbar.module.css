@@ -14,6 +14,10 @@
     margin-top: 20px;
 }
 
+.navbar a {
+    text-decoration: none;
+}
+
 .logo {
     font-size: 20px;
     font-weight: bolder;
@@ -83,10 +87,10 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    border: 2px solid rgba(173, 173, 173, 0.862);
+    border: 2px solid #F2F2F2BF;
     padding: 10px 20px;
     border-radius: 50px;
-    color: rgba(173, 173, 173, 0.862);
+    color: #F2F2F2BF;
     cursor: pointer;
     font-weight: bold;
     transition: 0.2s ease-in-out;

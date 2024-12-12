@@ -119,7 +119,7 @@
 }
 
 .button:hover {
-  background-color: #3157d5;
+  background-color: #6393FC;
 }
 
 .deviceMockup {
@@ -149,6 +149,12 @@
   backdrop-filter: blur(10px); 
   border-radius: 10px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: 0.2s ease-in-out;
+}
+
+.accent:hover {
+  background-color: rgba(62, 168, 230, 0.47);
+  backdrop-filter: blur(10px); 
 }
 
 .accentTop {
