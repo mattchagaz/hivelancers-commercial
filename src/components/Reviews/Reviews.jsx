@@ -3,6 +3,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 import styles from './Reviews.module.css';
+import star from '../../assets/star.png'
 
 export default function Reviews() {
     return (
@@ -33,7 +34,7 @@ export default function Reviews() {
           focus: 'center',
           perPage: 3, // Número de slides visíveis
           autoScroll: {
-            speed:0.5, // Velocidade do auto-scroll (ajuste conforme necessário)
+            speed:0.1, // Velocidade do auto-scroll (ajuste conforme necessário)
           },
           arrows: true,
           pagination: true,
@@ -42,31 +43,119 @@ export default function Reviews() {
         className={styles.carouselSpacing}
       >
         <SplideSlide>
-          <div className={styles.slide}>Contabilidade</div>
+        <div className={styles.slide}><p className={styles.comment}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div className={styles.author} >
+            <button className={styles.authorButton}>
+              Maria Clara
+            </button>
+            </div>
+            <div className={styles.helper}>
+              <div className={styles.stars}>
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+              </div>
+              <div className={styles.jobs}>
+              Desenvolvedora Web
+            </div>
+            </div>
+            </div>
         </SplideSlide>
         <SplideSlide>
-          <div className={styles.slide}>Desenvolvimento Mobile</div>
+        <div className={styles.slide}><p className={styles.comment}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div className={styles.author} >
+            <button className={styles.authorButton}>
+              Maria Clara
+            </button>
+            </div>
+            <div className={styles.helper}>
+              <div className={styles.stars}>
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+              </div>
+              <div className={styles.jobs}>
+              Desenvolvedora Web
+            </div>
+            </div>
+            </div>
         </SplideSlide>
         <SplideSlide>
-          <div className={styles.slide}>Marketing</div>
+        <div className={styles.slide}><p className={styles.comment}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div className={styles.author} >
+            <button className={styles.authorButton}>
+              Maria Clara
+            </button>
+            </div>
+            <div className={styles.helper}>
+              <div className={styles.stars}>
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+              </div>
+              <div className={styles.jobs}>
+              Desenvolvedora Web
+            </div>
+            </div>
+            </div>
         </SplideSlide>
         <SplideSlide>
-          <div className={styles.slide}>UI Design</div>
+        <div className={styles.slide}><p className={styles.comment}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div className={styles.author} >
+            <button className={styles.authorButton}>
+              Maria Clara
+            </button>
+            </div>
+            <div className={styles.helper}>
+              <div className={styles.stars}>
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+              </div>
+              <div className={styles.jobs}>
+              Desenvolvedora Web
+            </div>
+            </div>
+            </div>
         </SplideSlide>
         <SplideSlide>
-          <div className={styles.slide}>Desenvolvimento Web</div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className={styles.slide}>Design Gráfico</div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className={styles.slide}>UX Design</div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className={styles.slide}>Ilustração</div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className={styles.slide}>Redação</div>
+          <div className={styles.slide}><p className={styles.comment}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div className={styles.author} >
+            <button className={styles.authorButton}>
+              Maria Clara
+            </button>
+            </div>
+            <div className={styles.helper}>
+              <div className={styles.stars}>
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+              </div>
+              <div className={styles.jobs}>
+              Desenvolvedora Web
+            </div>
+            </div>
+            </div>
         </SplideSlide>
       </Splide>
 </div>

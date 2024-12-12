@@ -80,10 +80,69 @@ overflow: hidden;
         margin-top: 112px;
         height: 324px;
         width: 100%;
-        gap: 86px;
     }
     .slide{
         width: 690.84px;
-        border: 1px solid black;
         height: 324px;
+        margin: 0 43px 0 43px;
+    }
+    .comment{
+        font-weight: 400;
+        font-size: 19.44px;
+        color: #121212BF;
+        width: 545.4px;
+        height: 87px;
+        margin: 60.48px auto auto auto;
+        font-family: "Poppins", sans-serif;
+    }
+    .helper{
+        margin: 15px 0 71.719px 71.719px;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .authorButton{
+        font-weight: 500;
+        font-size: 16.56px;
+        border-radius: 66.77px;
+        height: 32.26px;
+        width: 181.92px;
+        background-color: #3E73E6;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        border: none;
+    }
+    .author{
+        display: flex;
+        margin: 40.719px 0 0 60.48px;
+        width: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .author::before {
+        content: "";
+        width: 420px;
+        height: 1px;
+        background-color: #CCCCCC;
+        display: inline-block;
+      }
+    .stars{
+        width: 135px;
+        height: 30px;
+    }
+    .jobs{
+        font-weight: 500;
+        font-size: 13.28px;
+        border-radius: 45.2px;
+        height: 28.57px;
+        width: 208.64px;
+        background-color: #6393FC;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
     }
