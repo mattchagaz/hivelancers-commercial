@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container{
+width: 100%;
+height: 1433px;
+background: url('../../assets/Rectangle 1153.png');
+background-size: cover;
+background-color: #121212; /* Fallback para navegadores antigos */
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+overflow: hidden;
+}
+.content {
+text-align: center;
+width: 823px;
+height: 219px;
+margin: 118px auto 0 auto; 
+}
+  
+.title{
+font-weight: 700;
+font-size: 50px;
+color: #F2F2F2;
+align-self: center;
+height: 59px;
+font-family: "Poppins", sans-serif;
+}
+.description{
+font-weight: 400;
+color: #F2F2F2BF;
+height: 54px;
+width: 853px;
+font-size: 18px;
+align-self: center;
+margin-top: 26px;
+margin-bottom: 26px;
+font-family: "Poppins", sans-serif;
+}
+.buttonGroup{
+height: 58px;
+width: 385px;
+margin: auto;
+text-align: center;
+display: flex;
+justify-content: center;
+gap: 20px;
+align-items: center;
+}
+.primaryButton{
+height: 38px;
+ width: 159px;
+ padding: 10px;
+ border-radius: 40px;
+ border: none;
+ cursor: pointer;
+ font-family: "Poppins", sans-serif;
+ font-weight: 500;
+ font-size: 13px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.secondaryButton{
+height: 38px;
+width: 159px;
+padding: 10px;
+border-radius: 40px;
+border: 1px solid white;
+color: white;
+background-color: transparent;
+cursor: pointer;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-size: 13px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.cases{
+width: 1344px;
+height: 866px;
+margin: 112px auto 0 auto;
+display: grid;
+grid-template-columns: repeat(4, 312px); /* Quatro colunas de largura igual */
+gap: 32px;
+align-items: start;
+}
+  .case {
+    background-color: #2C2C2C;
+    border-radius: 35px;
+  }
+  
+  .case:nth-child(1) {
+    grid-column: span 1;
+    height: 423px; /* Altura específica */
+  }
+  
+  .case:nth-child(2) {
+    grid-column: span 1;
+    height: 206px;
+  }
+  
+  .case:nth-child(3) {
+    grid-column: span 1;
+    height: 396px;
+  }
+  
+  .case:nth-child(4) {
+    grid-column: span 1; /* Permanece em 1 coluna */
+    height: 741px;
+    grid-row: span 2; /* Ocupa 2 linhas no grid */
+    align-self: center;
+  }
+  
+  .case:nth-child(5) {
+    grid-column: span 1;
+    height: 313px;
+  }
+  
+  .case:nth-child(6) {
+    grid-column: span 1;
+    height: 528px;
+  }
+  
+  .case:nth-child(7) {
+    grid-column: span 1;
+    height: 313px;
+  }
+  
