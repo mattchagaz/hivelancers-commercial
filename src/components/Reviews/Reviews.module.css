@@ -6,3 +6,84 @@ height: 917px;
 background-color: white;
 overflow: hidden;
 }
+
+.content {
+    text-align: center;
+    width: 823px;
+    height: 219px;
+    margin: 118px auto 0 auto; 
+    }
+      
+    .title{
+    font-weight: 700;
+    font-size: 50px;
+    color: #3E73E6;
+    align-self: center;
+    height: 59px;
+    font-family: "Poppins", sans-serif;
+    }
+    .description{
+    font-weight: 400;
+    color: #121212;
+    height: 54px;
+    width: 853px;
+    font-size: 18px;
+    align-self: center;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    font-family: "Poppins", sans-serif;
+    }
+    .buttonGroup{
+    height: 58px;
+    width: 385px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    }
+    .primaryButton{
+    height: 38px;
+     width: 159px;
+     padding: 10px;
+     border-radius: 40px;
+     border: none;
+     cursor: pointer;
+     font-family: "Poppins", sans-serif;
+     font-weight: 500;
+     font-size: 13px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #3E73E6;
+     color: white;
+    }
+    .secondaryButton{
+    height: 38px;
+    width: 159px;
+    padding: 10px;
+    border-radius: 40px;
+    border: 1px solid #3E73E6;
+    color: #3E73E6;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .reviews{
+        margin-top: 112px;
+        height: 324px;
+        width: 100%;
+        gap: 86px;
+    }
+    .slide{
+        width: 690.84px;
+        border: 1px solid black;
+        height: 324px;
+    }

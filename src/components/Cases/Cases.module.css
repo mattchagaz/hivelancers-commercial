@@ -60,6 +60,8 @@ height: 38px;
  display: flex;
  align-items: center;
  justify-content: center;
+ background-color: white;
+ color: black;
 }
 .secondaryButton{
 height: 38px;
