@@ -52,6 +52,7 @@ export default function Hero() {
           />
         </div>
       </div>
+      <div className={styles.overlay}></div>
     </div>
   )
 }
