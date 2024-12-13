@@ -21,8 +21,8 @@ export default function PrincipalAreas() {
           autoScroll: {
             speed: -0.4, 
           },
-          arrows: true,
-          pagination: true,
+          arrows: false,
+          pagination: false,
         }}
         extensions={{ AutoScroll }}
         className={styles.carouselSpacing}
@@ -67,8 +67,8 @@ export default function PrincipalAreas() {
           autoScroll: {
             speed: 0.4,
           },
-          arrows: true,
-          pagination: true,
+          arrows: false,
+          pagination: false,
         }}
         extensions={{ AutoScroll }}
         className={styles.carouselSpacing} 
@@ -102,7 +102,6 @@ export default function PrincipalAreas() {
         </SplideSlide>
       </Splide>
 
-      {/* Terceiro carrossel */}
       <Splide
         options={{
           type: 'loop',
@@ -113,8 +112,8 @@ export default function PrincipalAreas() {
           autoScroll: {
             speed: -0.4,
           },
-          arrows: true,
-          pagination: true,
+          arrows: false,
+          pagination: false,
         }}
         extensions={{ AutoScroll }}
         className={styles.carouselSpacing}

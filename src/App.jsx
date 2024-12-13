@@ -9,6 +9,7 @@ import Advantages from './components/Advantages/Advantages'
 import Footer from './components/Footer/Footer'
 import Cases from './components/Cases/Cases'
 import Reviews from './components/Reviews/Reviews'
+import Timer from './components/Timer/Timer'
 import './App.css'
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <About />
         <Process />
         <PrincipalAreas />
-        <Cases />
+        <Timer />
         <Reviews />
         <Advantages />
         <Faq />

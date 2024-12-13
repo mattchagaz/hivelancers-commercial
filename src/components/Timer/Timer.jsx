@@ -12,7 +12,7 @@ export default function Timer() {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2025-03-01T23:59:59').getTime();
+    const targetDate = new Date('2025-06-25T23:59:59').getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
