@@ -101,10 +101,12 @@ align-items: start;
   .case:nth-child(2) {
     grid-column: span 1;
     height: 206px;
+    position: relative;
+    bottom: -117px;
   }
   
   .case:nth-child(3) {
-    grid-column: span 1;
+    grid-column: span 1;  
     height: 396px;
   }
   
@@ -123,10 +125,14 @@ align-items: start;
   .case:nth-child(6) {
     grid-column: span 1;
     height: 528px;
+    position: relative;
+    top: -100px;
   }
   
   .case:nth-child(7) {
     grid-column: span 1;
     height: 313px;
+    position: relative;
+    top: -27px;
   }
   
