@@ -18,9 +18,9 @@ export default function PrincipalAreas() {
           drag: 'free',
           autoWidth: true,
           focus: 'center',
-          perPage: 3, // Número de slides visíveis
+          perPage: 3, 
           autoScroll: {
-            speed: -0.4, // Velocidade do auto-scroll (ajuste conforme necessário)
+            speed: -0.4, 
           },
           arrows: false,
           pagination: false,
