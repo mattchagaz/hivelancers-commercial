@@ -20,11 +20,11 @@ function App() {
         <About />
         <Process />
         <PrincipalAreas />
+        <Cases />
+        <Reviews />
         <Advantages />
         <Faq />
         <Footer />
-        <Cases />
-        <Reviews />
       </div>
     </>
   )
