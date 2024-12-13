@@ -62,6 +62,7 @@ height: 38px;
  justify-content: center;
  background-color: white;
  color: black;
+ transition: transform 0.2s ease;
 }
 .secondaryButton{
 height: 38px;
@@ -78,7 +79,18 @@ font-size: 13px;
 display: flex;
 align-items: center;
 justify-content: center;
+transition: transform 0.2s ease;
 }
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-2px);
+}
+
+.secondaryButton:hover {
+  background-color: #363636a5;
+}
+
 .cases{
 width: 1344px;
 height: 866px;

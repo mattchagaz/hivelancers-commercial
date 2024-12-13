@@ -58,6 +58,7 @@ overflow: hidden;
      justify-content: center;
      background-color: #3E73E6;
      color: white;
+     transition: transform 0.2s ease;
     }
     .secondaryButton{
     height: 38px;
@@ -74,7 +75,18 @@ overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.2s ease;
     }
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-2px);
+}
+
+.secondaryButton:hover {
+  background-color: #6393FC;
+  color: white;
+}
 
     .reviews{
         margin-top: 112px;
