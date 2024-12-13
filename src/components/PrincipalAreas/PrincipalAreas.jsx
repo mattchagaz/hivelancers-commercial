@@ -9,7 +9,7 @@ export default function PrincipalAreas() {
     <>
     <section className={styles.categoriesSection}>
     <h1 className={styles.label}>Categorias</h1>
-    <p className={styles.description}>Procurando ajuda? Aqui estão algumas das principais categorias mais pesquisadas na Hive.</p>
+    <p className={styles.description}>Descubra as áreas mais procuradas e relevantes para o mercado atual. Nosso portfólio abrange desde tecnologia e design até marketing e gestão empresarial, oferecendo soluções inovadoras para transformar ideias em resultados concretos.</p>
     <div className={styles.carouselContainer}>
       <Splide
         options={{
@@ -21,8 +21,8 @@ export default function PrincipalAreas() {
           autoScroll: {
             speed: -0.4, 
           },
-          arrows: false,
-          pagination: false,
+          arrows: true,
+          pagination: true,
         }}
         extensions={{ AutoScroll }}
         className={styles.carouselSpacing}
@@ -67,8 +67,8 @@ export default function PrincipalAreas() {
           autoScroll: {
             speed: 0.4,
           },
-          arrows: false,
-          pagination: false,
+          arrows: true,
+          pagination: true,
         }}
         extensions={{ AutoScroll }}
         className={styles.carouselSpacing} 
@@ -113,8 +113,8 @@ export default function PrincipalAreas() {
           autoScroll: {
             speed: -0.4,
           },
-          arrows: false,
-          pagination: false,
+          arrows: true,
+          pagination: true,
         }}
         extensions={{ AutoScroll }}
         className={styles.carouselSpacing}
