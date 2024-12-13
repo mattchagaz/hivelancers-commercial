@@ -7,6 +7,8 @@ import screenContent2 from '../../assets/Screenshot 2024-12-09 at 20.33.34.png';
 import screenContent3 from '../../assets/Screenshot 2024-12-09 at 16.13.30.png';
 import screenContent4 from '../../assets/Screenshot 2024-12-09 at 20.33.34.png';
 import screenContent5 from '../../assets/Screenshot 2024-12-09 at 20.33.34.png';
+import screenContent6 from '../../assets/Screenshot 2024-12-13 at 01.42.59.png';
+import screenContent7 from '../../assets/Screenshot 2024-12-13 at 01.43.16.png';
 
 const processes = [
   {

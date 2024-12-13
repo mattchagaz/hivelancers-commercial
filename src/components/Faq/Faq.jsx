@@ -29,33 +29,51 @@ const faqData = [
   },
   {
     id: 5,
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
-    category: 'support'
+    question: 'Que tipo de serviço nós oferecemos',
+    answer: 'Oferecemos uma ampla gama de serviços que incluem consultoria empresarial, design gráfico, desenvolvimento de sites, marketing digital, gestão de mídias sociais, análise de dados, e muito mais. Nosso objetivo é atender às suas necessidades específicas com soluções personalizadas.',
+    category: 'services'
   },
   {
     id: 6,
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
-    category: 'support'
+    question: 'Vocês oferecem suporte após a conclusão do serviço?',
+    answer: 'Sim, oferecemos suporte pós-serviço para garantir que você esteja completamente satisfeito com o resultado. Dependendo do tipo de serviço, também podemos oferecer planos de manutenção contínua.',
+    category: 'services'
   },
   {
     id: 7,
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
+    question: 'Posso definir meus próprios preços pelos serviços?',
+    answer: 'Sim, como freelancer, você tem total liberdade para definir os preços de seus serviços. No entanto, recomendamos pesquisar valores de mercado para manter a competitividade e atrair mais clientes para você.',
     category: 'services'
   },
   {
     id: 8,
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
+    question: 'Posso negociar os valores diretamente com os clientes?',
+    answer: 'Sim, você pode negociar os valores diretamente com os clientes dentro da plataforma. É importante ser claro e transparente durante a negociação para alinhar expectativas e garantir que ambas as partes estejam satisfeitas com o acordo.',
     category: 'services'
   },
   {
     id: 9,
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco',
-    category: 'services'
+    question: 'Como entro em contato com o suporte da plataforma?',
+    answer: 'Você pode entrar em contato com a gente através do nosso chat online 24/7 e totalmente humanizado, ou clicando diretamente na seção "Ajuda" do site. Nossa equipe está disponível para responder suas dúvidas de forma rápida e eficiente.',
+    category: 'support'
+  },
+  {
+    id: 10,
+    question: 'O que faço se tiver problemas com um cliente ou freelancer?',
+    answer: 'Se surgir algum problema, você pode abrir um chamado diretamente na plataforma. Nossa equipe de suporte analisará a situação e mediará para encontrar uma solução justa para ambas as partes.',
+    category: 'support'
+  },
+  {
+    id: 11,
+    question: 'Há algum limite para o valor que posso sacar?',
+    answer: 'Sim, a plataforma pode ter limites diários dependendo do método de pagamento escolhido. Verifique as políticas da plataforma na seção de "Pagamentos" para mais informações sobre os limites aplicáveis e como maximizar os saques.',
+    category: 'support'
+  },
+  {
+    id: 12,
+    question: 'Como posso atualizar meus dados cadastrais na plataforma?',
+    answer: 'Para atualizar seus dados cadastrais, acesse a seção "Configurações" e "Editar Perfil" e edite as informações necessárias. Se encontrar qualquer dificuldade durante o processo, nossa equipe de suporte estará disponível para ajudar a garantir que suas informações sejam atualizadas corretamente.',
+    category: 'support'
   }
 ]
 
@@ -78,8 +96,7 @@ export default function Faq() {
     <div className={styles.container}>
       <h1 className={styles.title}>Perguntas Frequentes</h1>
       <p className={styles.description}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-        enim ad minim veniam, quis nostrud exercitation ullamco
+      Tem dúvidas? Estamos aqui para ajudar! Obtenha respostas rápidas e claras sobre nossos serviços, processos e como podemos atender às suas necessidades.
       </p>
 
       <div className={styles.buttonGroup}>

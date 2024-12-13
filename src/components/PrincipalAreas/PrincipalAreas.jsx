@@ -8,7 +8,7 @@ export default function PrincipalAreas() {
   return (
     <div className={styles.Container}>
       <h1 className={styles.label}>principais áreas</h1>
-      <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor.</p>
+      <p className={styles.description}>Descubra as áreas mais procuradas e relevantes para o mercado atual. Nosso portfólio abrange desde tecnologia e design até marketing e gestão empresarial, oferecendo soluções inovadoras para transformar ideias em resultados concretos.</p>
       <div className={styles.carouselContainer}>
 
         <Splide
@@ -19,8 +19,7 @@ export default function PrincipalAreas() {
             focus: 'center',
             perPage: 3,
             autoScroll: {
-              speed: 1,
-              direction: 'ltr', 
+              speed: -0.4,
             },
             arrows: false,
             pagination: false,
@@ -65,8 +64,7 @@ export default function PrincipalAreas() {
             focus: 'center',
             perPage: 3,
             autoScroll: {
-              speed: -1,
-              direction: 'rtl',
+              speed: 0.4,
             },
             arrows: false,
             pagination: false,
@@ -111,8 +109,7 @@ export default function PrincipalAreas() {
             focus: 'center',
             perPage: 3,
             autoScroll: {
-              speed: 1,
-              direction: 'ltr', 
+              speed: -0.4,
             },
             arrows: false,
             pagination: false,

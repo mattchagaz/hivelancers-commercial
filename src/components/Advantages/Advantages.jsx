@@ -29,8 +29,7 @@ export default function Advantages() {
     <section className={styles.container}>
       <h2 className={styles.title}>Vantagens</h2>
       <p className={styles.description}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      Com nosso compromisso em excelência e inovação, garantimos benefícios exclusivos para nossos clientes. Nossa abordagem personalizada, profissionais experientes e soluções estratégicas proporcionam os melhores resultados para impulsionar o sucesso do seu negócio.
       </p>
       <div className={styles.features}>
         {features.map((feature, index) => (
