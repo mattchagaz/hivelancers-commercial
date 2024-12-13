@@ -8,7 +8,9 @@ const Navbar = () => {
     AOS.init();
     return (
         <div className={styles.navbar}>
-            <div  className={styles.logo}>Hivelancers</div>
+            <a href="/">
+                <div  className={styles.logo}>Hivelancers</div>
+            </a>
             <nav className={styles.nav}>
                 <ul className={styles.navItems}>
                     <li><a href="#">Início</a></li>

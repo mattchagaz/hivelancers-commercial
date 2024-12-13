@@ -4,6 +4,9 @@ import Hero from './components/Hero/Hero'
 import About from './components/About/About'
 import Process from './components/Process/Process'
 import PrincipalAreas from './components/PrincipalAreas/PrincipalAreas'
+import Faq from './components/Faq/Faq'
+import Advantages from './components/Advantages/Advantages'
+import Footer from './components/Footer/Footer'
 import Cases from './components/Cases/Cases'
 import Reviews from './components/Reviews/Reviews'
 import './App.css'
@@ -17,6 +20,9 @@ function App() {
         <About />
         <Process />
         <PrincipalAreas />
+        <Advantages />
+        <Faq />
+        <Footer />
         <Cases />
         <Reviews />
       </div>

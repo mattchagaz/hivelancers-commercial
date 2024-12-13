@@ -1,0 +1,131 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .title {
+    color: #3E73E6;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  .description {
+    color: #121212;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 3.6rem;
+    line-height: 1.6;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  
+  .button {
+    padding: 0.75rem 2.5rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .button.active {
+    background-color: #3E73E6;
+    color: #fff;
+  }
+  
+  .primaryButton {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: #3E73E6;
+    color: #fff;
+    border: none;
+  }
+  
+  .secondaryButton {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: transparent;
+    color: #3E73E6;
+    border: 1px solid #6393FC;
+  }
+
+  .button:hover {
+    background-color: #6393FC;
+    color: #fff;
+  }
+  
+  .faqList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .faqItem {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .faqHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .faqHeader.active {
+    color: #4169E1;
+  }
+
+  .faqHeader.active .faqText {
+    color: #4169E1;
+    font-weight: 600;
+  }
+  
+  .faqContent {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+  
+  .faqContent.active {
+    padding: 0 1.5rem 1rem 1.5rem;
+    max-height: 500px;
+  }
+  
+  .toggleIcon {
+    font-size: 1.5rem;
+    color: #3E73E6;
+  }
+  
+  .faqText {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    color: #121212CC;
+    line-height: 1.6;
+  }
+
+  .faqAnswer {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    color: #121212CC;
+    line-height: 1.6;
+  }
