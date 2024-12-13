@@ -101,11 +101,14 @@
     max-height: 0;
     overflow: hidden;
     transition: all 0.2s ease;
+    opacity: 0;
   }
   
   .faqContent.active {
     padding: 0 1.5rem 1rem 1.5rem;
     max-height: 500px;
+    transition: all 0.2s ease;
+    opacity: 1;
   }
   
   .toggleIcon {
