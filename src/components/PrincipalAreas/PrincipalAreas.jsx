@@ -7,9 +7,9 @@ import styles from './PrincipalAreas.module.css';
 export default function PrincipalAreas() {
   return (
     <>
-    <div className={styles.Container}>
-    <h1 className={styles.label}>principais áreas</h1>
-    <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipiscing elit, sed do eiusmod tempor.</p>
+    <section className={styles.categoriesSection}>
+    <h1 className={styles.label}>Categorias</h1>
+    <p className={styles.description}>Procurando ajuda? Aqui estão algumas das principais categorias mais pesquisadas na Hive.</p>
     <div className={styles.carouselContainer}>
       {/* Primeiro carrossel */}
       <Splide
@@ -152,7 +152,7 @@ export default function PrincipalAreas() {
         </SplideSlide>
       </Splide>
     </div>
-    </div>
+    </section>
     </>
   );
 }

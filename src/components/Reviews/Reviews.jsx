@@ -8,7 +8,7 @@ import star from '../../assets/star.png'
 export default function Reviews() {
     return (
   
-      <div className={styles.container}>
+      <section className={styles.reviewsSection}>
         <div className={styles.content}>
           <h1 className={styles.title}>
             Avaliações
@@ -160,7 +160,7 @@ export default function Reviews() {
       </Splide>
 </div>
 
-      </div>
+      </section>
 
     )
   }
