@@ -1,0 +1,115 @@
+.container {
+    min-height: 70vh;
+    background-image: url(../../assets/backgroound-advantages.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #60a5fa, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .description {
+    max-width: 600px;
+    margin-bottom: 3rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    animation: slideUp 1s ease-out;
+  }
+  
+  .timerContainer {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    animation: scaleIn 0.5s ease-out;
+  }
+  
+  .timerBox {
+    background: rgba(59, 130, 246, 0.1);
+    border: 2px solid rgba(59, 130, 246, 0.2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    min-width: 120px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+  }
+  
+  .timerBox:hover {
+    transform: translateY(-5px);
+  }
+  
+  .number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #60a5fa;
+    margin-bottom: 0.5rem;
+  }
+  
+  .label {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .timerContainer {
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  
+    .timerBox {
+      min-width: 100px;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .number {
+      font-size: 2rem;
+    }
+  }
+  
+  
