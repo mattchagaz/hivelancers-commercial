@@ -2,21 +2,22 @@
 
 .reviewsSection{
 width: 100%;
-height: 917px;
+min-height: 917px;
 background-color: white;
 overflow: hidden;
 }
 
 .content {
     text-align: center;
-    width: 823px;
+    width: 100%;
+    max-width: 51.438rem;
     height: 219px;
-    margin: 118px auto 0 auto; 
-    }
-      
+    margin: 7.375rem auto 0 auto; 
+}
+
     .title{
     font-weight: 700;
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #3E73E6;
     align-self: center;
     height: 59px;
@@ -25,24 +26,25 @@ overflow: hidden;
     .description{
     font-weight: 400;
     color: #121212;
-    height: 54px;
-    width: 853px;
-    font-size: 18px;
+    height: auto;
+    width: 100%;
+    font-size: 16px;
     align-self: center;
     margin-top: 26px;
-    margin-bottom: 26px;
     font-family: "Poppins", sans-serif;
     }
+
     .buttonGroup{
-    height: 58px;
+    height: auto;
     width: 385px;
-    margin: auto;
+    margin: 26px auto auto auto;
     text-align: center;
     display: flex;
     justify-content: center;
     gap: 20px;
     align-items: center;
     }
+
     .primaryButton{
     height: 38px;
      width: 159px;
@@ -60,6 +62,7 @@ overflow: hidden;
      color: white;
      transition: transform 0.2s ease;
     }
+
     .secondaryButton{
     height: 38px;
     width: 159px;
@@ -84,6 +87,7 @@ overflow: hidden;
 }
 
 .secondaryButton:hover {
+    border: 1px solid #6393FC;
   background-color: #6393FC;
   color: white;
 }
@@ -99,32 +103,36 @@ overflow: hidden;
             transparent
           );
     }
+
     .slide{
         width: 690.84px;
         height: 324px;
         margin: 0 43px 0 43px;
     }
+
     .comment{
         font-weight: 400;
         font-size: 19.44px;
         color: #121212BF;
-        width: 545.4px;
-        height: 87px;
+        max-width: 545.4px;
+        max-height: 87px;
         margin: 60.48px auto auto auto;
         font-family: "Poppins", sans-serif;
     }
+
     .helper{
         margin: 15px 0 71.719px 71.719px;
         width: auto;
         display: flex;
         justify-content: space-between;
     }
+
     .authorButton{
         font-weight: 500;
         font-size: 16.56px;
         border-radius: 66.77px;
-        height: 32.26px;
-        width: 181.92px;
+        max-height: 32.26px;
+        max-width: 181.92px;
         background-color: #3E73E6;
         color: white;
         display: flex;
@@ -132,7 +140,9 @@ overflow: hidden;
         justify-content: center;
         font-family: "Poppins", sans-serif;
         border: none;
+        padding: 10px 20px;
     }
+
     .author{
         display: flex;
         margin: 40.719px 0 0 60.48px;
@@ -140,27 +150,84 @@ overflow: hidden;
         justify-content: space-between;
         align-items: center;
     }
+
     .author::before {
         content: "";
-        width: 420px;
+        width: 100%;
+        max-width: 420px;
         height: 1px;
         background-color: #CCCCCC;
         display: inline-block;
       }
+
     .stars{
         width: 135px;
         height: 30px;
     }
+
     .jobs{
         font-weight: 500;
         font-size: 13.28px;
         border-radius: 45.2px;
         height: 28.57px;
-        width: 208.64px;
+        max-width: 208.64px;
         background-color: #6393FC;
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: "Poppins", sans-serif;
+        padding: 0 20px;
     }
+
+    @media (max-width: 768px) {
+      
+        .title {
+          font-size: 2rem;
+        }
+
+        .buttonGroup{
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .content{
+            height: auto;
+            padding: 32px;
+        }
+
+        .comment{
+            font-size: 16px;
+        }
+        
+        .slide{
+            width: 300px;
+        }
+
+        .author{
+            margin:40.719px 0 0 0;
+        }
+        
+        .helper{
+            margin: 10px 0 0 0;
+        }
+
+        .jobs{
+            min-width: 160px;
+            font-size: 10px;
+        }
+
+        .authorButton{
+            min-width: 120px;
+            
+        }
+
+        .author::before {
+            width: 140px;
+          }
+
+          .reviews{
+            margin: 0 0 56px 0;
+          }
+      }
+      

@@ -5,6 +5,7 @@ export default function AboutSection() {
     <section className={styles.aboutSection}>
       <div className={styles.aboutContent}>
         <div className={styles.label}>Sobre nós</div>
+        <div className={styles.groupDivs}>
         <div className={styles.entireContent}>
             <div className={styles.yearLabel}>2024 - ATUAL</div>
             <h1 className={styles.title}>Hivelancers</h1>
@@ -12,11 +13,13 @@ export default function AboutSection() {
               Encontre Freelancers para Qualquer Projeto
             </p>
         </div>
-        </div>
-      <div className={styles.gradientBg}>
+    
+      <div className={styles.entireContent2}>
             <p className={styles.description}>
-               A Hivelancers é uma plataforma, desenvolvida por freelancers para freelancers, com o objetivo de simplificar e aprimorar a conexão entre usuários e prestadores de serviços.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             </p>
+      </div>
+      </div>
       </div>
     </section>
   );

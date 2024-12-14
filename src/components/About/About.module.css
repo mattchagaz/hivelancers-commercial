@@ -2,26 +2,41 @@
 
 .aboutSection {
     background-color: #121212;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 10rem 2rem;
     position: relative;
     overflow: hidden;
   }
 
   .entireContent {
-    width: 50%;
+    width: 450px;
     padding: 50px;
     background: linear-gradient(240deg, rgba(65, 105, 225, 0.26)10%, rgba(65,105,225,0) 50%, rgba(65,105,225,0) 100%);
     border-radius: 30px;
     border-top: 2px solid rgba(0, 96, 199, 0.529);
     border-left: 2px solid rgba(0, 96, 199, 0.529);
+    border-bottom: 2px solid rgba(0, 96, 199, 0.529);
+  }
 
+  .entireContent2 {
+    width: 650px;
+    padding: 50px;
+    border-radius: 30px;
+    border-top: 2px solid rgba(0, 96, 199, 0.529);
+    border-right: 2px solid rgba(0, 96, 199, 0.529);
+    border-bottom: 2px solid rgba(0, 96, 199, 0.529);
   }
   
   .aboutContent {
-    width: 50%;
+    width: 80%;
     padding: 10px;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
+  }
+
+  .groupDivs{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
   }
   
   .label {
@@ -71,17 +86,33 @@
     max-width: 600px;
     line-height: 1.6;
   }
-  
-  .gradientBg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 55%;
-    right: 20%;
-    width: 400px;
-    height: 280px;
-    background: radial-gradient(circle, rgba(65,105,225,0.3) 0%, rgba(65,105,225,0) 70%);
-    transform: translateY(-50%);
-    pointer-events: none;
+
+  @media (max-width: 768px) {
+
+    .groupDivs{
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .description{
+      font-family: 10px;
+    }
+
+    .entireContent {
+      width: 344.42px;
+    }
+
+    .entireContent2 {
+      width: 344.42px;
+    }
+
+    .aboutContent{
+      margin: 0;
+      padding: 0;
+    }
+
+    .aboutSection{
+      padding: 2rem 0.3rem 5rem 0.3rem;
+    }
+
   }
