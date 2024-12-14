@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { IoAddOutline,  IoClose } from "react-icons/io5";
+import { IoClose  } from "react-icons/io5";
+import { HiOutlinePlusSm } from "react-icons/hi";
 import styles from './Faq.module.css'
 
 const faqData = [
@@ -129,7 +130,7 @@ export default function Faq() {
             >
               <span className={styles.faqText}>{faq.question}</span>
               <span className={styles.toggleIcon}>
-                {activeId === faq.id ? <IoAddOutline /> : <IoClose />}
+                {activeId === faq.id ? <HiOutlinePlusSm /> : <IoClose />}
               </span>
             </div>
             <div className={`${styles.faqContent} ${activeId === faq.id ? styles.active : ''}`}>
