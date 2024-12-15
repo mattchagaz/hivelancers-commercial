@@ -37,7 +37,7 @@ export default function Reviews() {
             speed: 0.4, 
           },
           arrows: true,
-          pagination: true,
+          pagination: false,
         }}
         extensions={{ AutoScroll }}
         className={styles.carouselSpacing}

@@ -1,5 +1,5 @@
 import styles from './Footer.module.css'
-import { FaInstagram, FaXTwitter, FaFacebook, FaYoutube, FaLinkedin } from 'react-icons/fa6'
+import { FaInstagram, FaXTwitter, FaTiktok, FaYoutube, FaLinkedin } from 'react-icons/fa6'
 
 export default function Footer() {
   return (
@@ -34,7 +34,7 @@ export default function Footer() {
                 <FaXTwitter />
               </a>
               <a href="#" className={styles.socialLink}>
-                <FaFacebook />
+                <FaTiktok />
               </a>
               <a href="#" className={styles.socialLink}>
                 <FaYoutube />
