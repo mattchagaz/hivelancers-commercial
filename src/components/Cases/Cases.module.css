@@ -12,10 +12,11 @@ background-position: center;
 overflow: hidden;
 }
 .content {
-text-align: center;
-width: 823px;
-height: 219px;
-margin: 118px auto 0 auto; 
+  text-align: center;
+  width: 100%;
+  max-width: 51.438rem;
+  height: 219px;
+  margin: 7.375rem auto 0 auto; 
 }
   
 .title{
@@ -34,19 +35,18 @@ width: 853px;
 font-size: 18px;
 align-self: center;
 margin-top: 26px;
-margin-bottom: 26px;
 font-family: "Poppins", sans-serif;
 }
 .buttonGroup{
-height: 58px;
-width: 385px;
-margin: auto;
-text-align: center;
-display: flex;
-justify-content: center;
-gap: 20px;
-align-items: center;
-}
+  height: auto;
+  width: 385px;
+  margin: 26px auto auto auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  }
 .primaryButton{
 height: 38px;
  width: 159px;
@@ -148,3 +148,40 @@ align-items: start;
     top: -27px;
   }
   
+  @media (max-width: 768px) {
+
+    .cases{
+      grid-template-columns: repeat(2, 164.84px);
+      height: auto;
+      align-items: center;
+    }
+
+    .casesSection{
+      height: auto;
+    }
+
+    .title {
+    font-size: 2rem;
+    }
+
+    .buttonGroup{
+    flex-direction: column;
+    width: 100%;
+    }
+
+    .description{
+      height: auto;
+      width: 100%;
+      font-size: 16px;
+      }
+      
+    .casesSection{
+    height: auto;
+    }
+
+    .content{
+    height: auto;
+    padding: 32px;
+    }
+
+  }

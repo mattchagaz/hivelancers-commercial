@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer'
 import Cases from './components/Cases/Cases'
 import Reviews from './components/Reviews/Reviews'
 import Timer from './components/Timer/Timer'
+import { MouseSmooth } from 'react-mouse-smooth'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Process />
         <PrincipalAreas />
         <Timer />
+        <Cases />
         <Reviews />
         <Advantages />
         <Faq />
