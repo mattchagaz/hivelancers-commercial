@@ -107,3 +107,139 @@
     background-color: rgba(0, 0, 0, 0.717);
     color: rgba(255, 255, 255, 0.787);
 }
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #F2F2F2BF;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+}
+
+.navActive {
+    display: block;
+}
+
+.buttonsMobile {
+    display: none; 
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5px; 
+}
+
+.buttonsMobile a {
+    text-align: center;
+}
+
+.navActive .buttonsMobile {
+    display: flex; 
+}
+
+.buttonsMobile .btnLogin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: #3E73E6;
+    color: #F2F2F2BF;
+    border: none;
+    width: 115px;
+}
+
+.buttonsMobile .btnSignup {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: transparent;
+    border: 2px solid #F2F2F2BF;
+    color: #F2F2F2BF;
+    width: 115px;
+}
+
+/* Adicionando uma animação de fade e deslizamento */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Ajuste para telas pequenas */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        display: block; 
+        z-index: 1001; 
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 287px;
+        background: rgba(27, 32, 35, 0.616); 
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        z-index: 1000;
+        border-radius: 30px;
+        margin-right: 20px;
+        backdrop-filter: blur(30px); 
+        -webkit-backdrop-filter: blur(10px); 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .navbar li a {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        color: #F2F2F2BF;
+    }
+
+    .navItems {
+        flex-direction: column;
+        padding: 0;
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 30px;
+        padding: 20px;
+        border: none;
+    }
+
+    .navActive {
+        display: flex; 
+        animation: slideDown 0.4s ease forwards;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .buttonsMobile {
+        display: flex; 
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .buttons {
+        display: none; 
+    }
+}
+
