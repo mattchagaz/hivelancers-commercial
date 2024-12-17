@@ -23,6 +23,7 @@ overflow: hidden;
     height: 59px;
     font-family: "Poppins", sans-serif;
     }
+    
     .description{
     font-weight: 400;
     color: #121212;
@@ -193,7 +194,8 @@ overflow: hidden;
 
         .content{
             height: auto;
-            padding: 32px;
+            padding: 64px 32px 64px 32px;
+            margin: 0;
         }
 
         .comment{

@@ -92,6 +92,7 @@
     .groupDivs{
       flex-direction: column;
       gap: 30px;
+      align-items: center;
     }
 
     .description{
@@ -107,12 +108,14 @@
     }
 
     .aboutContent{
-      margin: 0;
+      margin: auto;
       padding: 0;
+      width: 344.42px;
     }
 
     .aboutSection{
-      padding: 2rem 0.3rem 5rem 0.3rem;
+      padding: 2rem 0 5rem 0;
+      align-items: center;
     }
 
   }

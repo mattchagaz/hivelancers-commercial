@@ -84,3 +84,24 @@
     transition: .5s;
   }
   
+  @media (max-width: 768px) {
+
+    .description{
+      font-family: 10px;
+    }
+
+    .slide{
+      height: 19px;
+      padding: 4.19px 15.09px 4.19px 15.09px;
+      min-width: 50px;
+      font-size: 8.58px;
+      margin: 0 5px 0 5px;
+    }
+
+    .categoriesSection{
+      margin: 0;
+      width: 100%;
+      padding: 64px 32px 64px 32px;
+    }
+
+  }
