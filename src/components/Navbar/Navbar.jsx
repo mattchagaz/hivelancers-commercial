@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { LuArrowUpRight } from "react-icons/lu";
-import { IoMenu, IoClose  } from "react-icons/io5";
+import { CgMenuRight } from "react-icons/cg";
+import { IoClose  } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -25,7 +26,7 @@ const Navbar = () => {
                 className={`${styles.menuMobileIcons} ${isMenuOpen ? styles.menuMobileIconsActive : ""}`} 
                 onClick={toggleMenu}
             >
-                {isMenuOpen ? <IoClose  /> : <IoMenu />}
+                {isMenuOpen ? <IoClose  /> : <CgMenuRight />}
             </button>
             <nav className={`${styles.nav} ${isMenuOpen ? styles.navActive : ""}`}>
                 <ul className={styles.navItems}>
