@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { LuArrowUpRight } from "react-icons/lu";
-import { GiHamburgerMenu } from "react-icons/gi"; 
+import { IoMenu, IoClose  } from "react-icons/io5";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -21,8 +21,11 @@ const Navbar = () => {
             <a href="/">
                 <div className={styles.logo}>Hivelancers</div>
             </a>
-            <button className={styles.hamburger} onClick={toggleMenu}>
-                <GiHamburgerMenu />
+            <button 
+                className={`${styles.menuMobileIcons} ${isMenuOpen ? styles.menuMobileIconsActive : ""}`} 
+                onClick={toggleMenu}
+            >
+                {isMenuOpen ? <IoClose  /> : <IoMenu />}
             </button>
             <nav className={`${styles.nav} ${isMenuOpen ? styles.navActive : ""}`}>
                 <ul className={styles.navItems}>
@@ -34,20 +37,17 @@ const Navbar = () => {
                     <li><a href="#Reviews">Avaliações</a></li>
                     <li><a href="#Advantages">Vantagens</a></li>
                     <li><a href="#Support">Suporte</a></li>
-                    
-                <div className={styles.buttonsMobile}>
-                    <a href="https://hivelancers.vercel.app/Signup">
-                        <button className={styles.btnSignup}>
-                            Cadastrar <LuArrowUpRight />
-                        </button>
-                    </a>
-                    <a href="https://hivelancers.vercel.app/Login">
-                        <button className={styles.btnLogin}>Entrar</button>
-                    </a>
-                </div>
+                    <div className={styles.buttonsMobile}>
+                        <a href="https://hivelancers.vercel.app/Signup">
+                            <button className={styles.btnSignup}>
+                                Cadastrar <LuArrowUpRight />
+                            </button>
+                        </a>
+                        <a href="https://hivelancers.vercel.app/Login">
+                            <button className={styles.btnLogin}>Entrar</button>
+                        </a>
+                    </div>
                 </ul>
-
-           
             </nav>
             <div className={styles.buttons}>
                 <a href="https://hivelancers.vercel.app/Login">
