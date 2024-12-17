@@ -42,7 +42,7 @@ export default function ProcessSection() {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section className={styles.processSection}>
+    <section id='Process' className={styles.processSection}>
       <div className={styles.processContent}>
         <div className={styles.leftContent}>
           <div className={styles.label}>Processos</div>

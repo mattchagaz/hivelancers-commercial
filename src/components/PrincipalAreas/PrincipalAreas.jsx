@@ -7,7 +7,7 @@ import styles from './PrincipalAreas.module.css';
 export default function PrincipalAreas() {
   return (
     <>
-    <section className={styles.categoriesSection}>
+    <section id='Categories' className={styles.categoriesSection}>
     <h1 className={styles.label}>Categorias</h1>
     <p className={styles.description}>Descubra as áreas mais procuradas e relevantes para o mercado atual. Nosso portfólio abrange desde tecnologia e design até marketing e gestão empresarial, oferecendo soluções inovadoras para transformar ideias em resultados concretos.</p>
     <div className={styles.carouselContainer}>

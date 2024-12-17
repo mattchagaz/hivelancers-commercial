@@ -26,14 +26,14 @@ const Navbar = () => {
             </button>
             <nav className={`${styles.nav} ${isMenuOpen ? styles.navActive : ""}`}>
                 <ul className={styles.navItems}>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Processos</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Timer</a></li>
-                    <li><a href="#">Avaliações</a></li>
-                    <li><a href="#">Vantagens</a></li>
-                    <li><a href="#">Suporte</a></li>
+                    <li><a href="#Home">Início</a></li>
+                    <li><a href="#About">Sobre nós</a></li>
+                    <li><a href="#Process">Processos</a></li>
+                    <li><a href="#Categories">Categorias</a></li>
+                    <li><a href="#Timer">Timer</a></li>
+                    <li><a href="#Reviews">Avaliações</a></li>
+                    <li><a href="#Advantages">Vantagens</a></li>
+                    <li><a href="#Support">Suporte</a></li>
                     
                 <div className={styles.buttonsMobile}>
                     <a href="https://hivelancers.vercel.app/Signup">
