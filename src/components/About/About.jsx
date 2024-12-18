@@ -16,7 +16,7 @@ export default function AboutSection() {
     
       <div className={styles.entireContent2}>
             <p className={styles.description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            A Hivelancers é uma plataforma para freelancers, uma plataforma moderna e objetiva para todos os públicos. Facilitamos a conexão entre profissionais talentosos e projetos de diversas áreas, garantindo qualidade, agilidade e inovação. Seja você um freelancer buscando novas oportunidades ou uma empresa procurando os melhores profissionais. A Hivelancers é a solução ideal para alcançar seus objetivos!
             </p>
       </div>
       </div>

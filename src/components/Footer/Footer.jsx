@@ -9,14 +9,14 @@ export default function Footer() {
           <h2 className={styles.logo}>Hivelancers</h2>
           
           <nav className={styles.navigation}>
-            <a href="/" className={styles.navLink}>Inicio</a>
-            <a href="/sobre-nos" className={styles.navLink}>Sobre Nós</a>
-            <a href="/processos" className={styles.navLink}>Processos</a>
-            <a href="/categorias" className={styles.navLink}>Categorias</a>
-            <a href="/casos-de-sucesso" className={styles.navLink}>Casos de Sucesso</a>
-            <a href="/avaliacoes" className={styles.navLink}>Avaliações</a>
-            <a href="/vantagens" className={styles.navLink}>Vantagens</a>
-            <a href="/suporte" className={styles.navLink}>Suporte</a>
+            <a href="#Home" className={styles.navLink}>Inicio</a>
+            <a href="#About" className={styles.navLink}>Sobre Nós</a>
+            <a href="#Process" className={styles.navLink}>Processos</a>
+            <a href="#Categories" className={styles.navLink}>Categorias</a>
+            <a href="#Timer" className={styles.navLink}>Casos de Sucesso</a>
+            <a href="#Reviews" className={styles.navLink}>Avaliações</a>
+            <a href="#Advantages" className={styles.navLink}>Vantagens</a>
+            <a href="#Support" className={styles.navLink}>Suporte</a>
           </nav>
 
           <div className={styles.bottom}>

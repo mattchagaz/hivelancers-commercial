@@ -16,7 +16,7 @@ export default function Reviews() {
             Avaliações
           </h1>
           <p className={styles.description}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+          Na Hivelancers, garantimos qualidade, eficiência e a conexão entre empresas e os melhores freelancers do mercado. Veja o que alguns de nossos clientes dizem sobre os projetos entregues com excelência e confiança.
             </p>
         <div className={styles.buttonGroup}>
           <a href="https://hivelancers.vercel.app/Login">
@@ -50,7 +50,7 @@ export default function Reviews() {
       >
         <SplideSlide>
         <div className={styles.slide}><p className={styles.comment}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        A plataforma superou minhas expectativas! Consegui encontrar freelancers altamente qualificados e entregas rápidas. Recomendo a todos que buscam resultados eficientes e profissionais.
             </p>
             <div className={styles.author} >
             <button className={styles.authorButton}>
@@ -73,11 +73,11 @@ export default function Reviews() {
         </SplideSlide>
         <SplideSlide>
         <div className={styles.slide}><p className={styles.comment}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Hivelancers é uma excelente solução para quem precisa de agilidade e qualidade. Os profissionais cadastrados são muito competentes, e a experiência foi muito boa!
             </p>
             <div className={styles.author} >
             <button className={styles.authorButton}>
-              Maria Clara
+              João Silva
             </button>
             </div>
             <div className={styles.helper}>
@@ -89,18 +89,18 @@ export default function Reviews() {
                 <img src={star} alt="" />
               </div>
               <div className={styles.jobs}>
-              Desenvolvedora Web
+              Designer Gráfico
             </div>
             </div>
             </div>
         </SplideSlide>
         <SplideSlide>
         <div className={styles.slide}><p className={styles.comment}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Contratar freelancers foi bem tranquilo! A plataforma é bem intuitiva e os profissionais entregaram um trabalho que superou minhas expectativas. A comunicação é clara e o processo foi bem rápido pro serviço que eu precisava.
             </p>
             <div className={styles.author} >
             <button className={styles.authorButton}>
-              Maria Clara
+              Ana Beatriz
             </button>
             </div>
             <div className={styles.helper}>
@@ -112,18 +112,18 @@ export default function Reviews() {
                 <img src={star} alt="" />
               </div>
               <div className={styles.jobs}>
-              Desenvolvedora Web
+              Gestora de Projetos
             </div>
             </div>
             </div>
         </SplideSlide>
         <SplideSlide>
         <div className={styles.slide}><p className={styles.comment}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           A Hivelancers é muito boa! Encontrei profissionais talentosos pro meu projeto em poucos minutos. A plataforma é prática, moderna e facilita bastante.
             </p>
             <div className={styles.author} >
             <button className={styles.authorButton}>
-              Maria Clara
+              Lucas Andrade
             </button>
             </div>
             <div className={styles.helper}>
@@ -135,18 +135,18 @@ export default function Reviews() {
                 <img src={star} alt="" />
               </div>
               <div className={styles.jobs}>
-              Desenvolvedora Web
+              Desenvolvedor Full Stack
             </div>
             </div>
             </div>
         </SplideSlide>
         <SplideSlide>
           <div className={styles.slide}><p className={styles.comment}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Foi uma experiência ótima! Recebi propostas rapidamente e o freelancer que contratei entregou um trabalho impecável. Recomendo a plataforma a todos!
             </p>
             <div className={styles.author} >
             <button className={styles.authorButton}>
-              Maria Clara
+              Mariana Costa
             </button>
             </div>
             <div className={styles.helper}>
@@ -158,14 +158,13 @@ export default function Reviews() {
                 <img src={star} alt="" />
               </div>
               <div className={styles.jobs}>
-              Desenvolvedora Web
+               Marketing
             </div>
             </div>
             </div>
         </SplideSlide>
       </Splide>
 </div>
-
       </section>
 
     )
