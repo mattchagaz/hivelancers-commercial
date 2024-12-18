@@ -97,10 +97,13 @@ overflow: hidden;
           );
     }
 
-    .slide{
+    .slide {
+        padding: 10px;
+        border-radius: 30px;
         width: 690.84px;
         height: 324px;
         margin: 0 43px 0 43px;
+        background-color: #cccccc27;
     }
 
     .comment{
