@@ -215,18 +215,17 @@
   
     .buttonGroup {
       display: flex;
-      
       padding: 0 2rem;
     }
 
     .primaryButton{
-      font-size: 8.9px;
-      padding: 12.15px 17.62px;
+      font-size: 0.6rem;
+      padding: 12.15px 10.62px;
     }
 
     .secondaryButton{
-      font-size: 8.9px;
-      padding: 12.15px 17.62px;
+      font-size: 0.6rem;
+      padding: 12.15px 10.62px;
     }
   
     .browserFrame {

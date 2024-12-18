@@ -156,16 +156,16 @@
   
     .timerBox {
       min-width: 120px;
-      padding: 1rem;
+      padding: 2rem;
     }
   
     .title {
-      font-size: 27px;
+      font-size: 1.68rem;
     }
   
     .description {
       margin-top: 18px;
-      font-size: 12px;
+      font-size: 0.75rem;
     }
   
     .number {
@@ -173,7 +173,7 @@
     }
 
     .createAccountButton {
-      font-size: 1rem;
+      font-size: 0.875rem;
       padding: 0.8rem 1.6rem;
     }
   }
@@ -184,11 +184,12 @@
     }
   
     .title {
-      font-size: 2rem;
+      margin-top: 3.1rem;
+      font-size: 1.68rem;
     }
   
     .description {
-      font-size: 0.9rem;
+      font-size: 0.75rem;
     }
   
     .number {
@@ -196,8 +197,9 @@
     }
 
     .createAccountButton {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       padding: 0.7rem 1.4rem;
+      margin-bottom: 1.25rem;
     }
   }
   
