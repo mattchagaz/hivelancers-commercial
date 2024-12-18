@@ -13,21 +13,28 @@
     text-align: center;
   }
   
+  .content {
+    z-index: 10;
+  }
+  
   .title {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
-    background: linear-gradient(to right, #60a5fa, #3b82f6);
+    background: linear-gradient(to right, #60a5fa, #3b82f6, #2563eb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in, glow 1s ease-in-out infinite alternate;
   }
   
   .description {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     max-width: 600px;
     margin-bottom: 3rem;
-    color: #94a3b8;
+    color: #e2e8f0;
     line-height: 1.6;
     animation: slideUp 1s ease-out;
+    font-size: 1.1rem;
   }
   
   .timerContainer {
@@ -39,30 +46,64 @@
   
   .timerBox {
     background: rgba(59, 130, 246, 0.1);
-    border: 2px solid rgba(59, 130, 246, 0.2);
+    border: 2px solid rgba(59, 130, 246, 0.3);
     border-radius: 1rem;
     padding: 1.5rem;
-    min-width: 120px;
+    min-width: 140px;
     backdrop-filter: blur(10px);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
   }
   
   .timerBox:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: #60a5fa;
   }
   
   .number {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #60a5fa;
     margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
   }
   
   .label {
-    color: #94a3b8;
-    font-size: 0.9rem;
+    color: #a0aec0;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+  }
+
+  .createAccountButton {
+    background: rgba(59, 130, 246, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(59, 130, 246, 0.3);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 875rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in 0.5s backwards;
+  }
+  
+  .createAccountButton:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(59, 130, 246, 0.3);
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-100px) translateX(100px);
+    }
   }
   
   @keyframes fadeIn {
@@ -92,12 +133,20 @@
     }
   }
   
-  @media (max-width: 768px) {
-
-    .container{
-      min-height: 40vh;
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #60a5fa, 0 0 10px #60a5fa;
     }
-
+    to {
+      text-shadow: 0 0 10px #60a5fa, 0 0 20px #60a5fa;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
     .timerContainer {
       flex-wrap: wrap;
       gap: 1rem;
@@ -105,19 +154,48 @@
     }
   
     .timerBox {
+      min-width: 120px;
+      padding: 1rem;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .number {
+      font-size: 2.5rem;
+    }
+
+    .createAccountButton {
+      font-size: 1rem;
+      padding: 0.8rem 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .timerBox {
       min-width: 100px;
     }
   
     .title {
-      font-size: 27px;
+      font-size: 2rem;
     }
-
-    .description{
-      font-size: 12px;
+  
+    .description {
+      font-size: 0.9rem;
     }
   
     .number {
       font-size: 2rem;
+    }
+
+    .createAccountButton {
+      font-size: 0.9rem;
+      padding: 0.7rem 1.4rem;
     }
   }
   
