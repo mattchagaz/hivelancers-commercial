@@ -29,7 +29,7 @@
   .description {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    max-width: 600px;
+    max-width: 800px;
     margin-bottom: 3rem;
     color: #e2e8f0;
     line-height: 1.6;
@@ -39,6 +39,8 @@
   
   .timerContainer {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
     margin-bottom: 3rem;
     animation: scaleIn 0.5s ease-out;
