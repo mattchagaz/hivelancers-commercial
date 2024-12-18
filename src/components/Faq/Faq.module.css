@@ -153,21 +153,36 @@
 
   @media (max-width: 768px) {
 
-    .container{
-      padding: 64px 32px;
+    .container {
+      padding: 1.5rem 1rem;
+    }
+  
+    .title {
+      font-size: 1.68rem;
+      margin-bottom: 1rem;
+    }
+  
+    .description {
+      font-size: 0.75rem;
+      margin-bottom: 2rem;
+    }
+  
+    .buttonGroup {
+      gap: 0.75rem;
+    }
+  
+    .button {
+      font-size: 0.6rem;
+      padding: 0.6rem 1.5rem;
     }
 
-    .title{
-      font-size: 20px;
+    .faqHeader {
+      font-size: 13px;
+      padding: 1rem 1rem;
     }
-
-    .description{
+  
+    .faqAnswer {
       font-size: 12px;
     }
-
-    .button{
-      font-size: 7.17px;
-      padding: 6.07px 20.48px 6.07px 20.48px;
-    }
-
   }
+  
