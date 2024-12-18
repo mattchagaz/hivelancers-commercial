@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import styles from './process.module.css';
+import styles from './Process.module.css';
 import laptop from '../../assets/Macbook.png';
 import laptopMobile from '../../assets/Macbook-mobile.png';
 import screenContent1 from '../../assets/Screenshot 2024-12-09 at 16.14.08.png';

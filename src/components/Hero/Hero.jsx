@@ -1,4 +1,4 @@
-import styles from './hero.module.css'
+import styles from './Hero.module.css'
 import { FaSearch } from "react-icons/fa";
 import { FiFileText } from "react-icons/fi";
 import HivelancersImage from '../../assets/Screenshot 2024-12-09 at 16.13.30.png'
