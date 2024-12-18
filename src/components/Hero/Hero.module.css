@@ -213,19 +213,19 @@
       font-size: 12px;
     }
   
-    .buttonGroup {
-      display: flex;
-      padding: 0 2rem;
-    }
+    .buttonGroup{
+      margin-top: 18px;
+      width: 100%;
+  }
 
-    .primaryButton{
-      font-size: 0.6rem;
-      padding: 12.15px 10.62px;
+  .primaryButton{
+      font-size: 9px;
+      padding: 0.6rem 1.5rem;
     }
 
     .secondaryButton{
-      font-size: 0.6rem;
-      padding: 12.15px 10.62px;
+      font-size: 9px;
+      padding: 0.6rem 1.5rem;
     }
   
     .browserFrame {
