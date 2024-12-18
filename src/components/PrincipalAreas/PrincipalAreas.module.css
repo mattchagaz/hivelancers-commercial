@@ -86,8 +86,16 @@
   
   @media (max-width: 768px) {
 
+    .label::before {
+      width: 36px;
+    }
+
     .description{
-      font-family: 10px;
+      font-size: 10px;
+    }
+
+    .carouselContainer{
+      margin: 0;
     }
 
     .slide{
@@ -102,6 +110,10 @@
       margin: 0;
       width: 100%;
       padding: 64px 32px 64px 32px;
+    }
+
+    .carouselSpacing {
+      margin-bottom: 10px;
     }
 
   }

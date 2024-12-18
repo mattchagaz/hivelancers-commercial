@@ -2,6 +2,8 @@ import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+import { FaSearch } from "react-icons/fa";
+import { FiFileText } from "react-icons/fi";
 import styles from './Reviews.module.css';
 import star from '../../assets/star.png'
 
@@ -16,14 +18,18 @@ export default function Reviews() {
           <p className={styles.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
             </p>
-          <div className={styles.buttonGroup}>
-              <button className={styles.primaryButton}>
-                Encontre Freelancers
-              </button>
-              <button className={styles.secondaryButton}>
-               Publique seu Projeto
-              </button>
-          </div>
+        <div className={styles.buttonGroup}>
+          <a href="https://hivelancers.vercel.app/Login">
+            <button className={styles.primaryButton}>
+             <FaSearch /> Encontre Freelancers
+            </button>
+          </a>
+          <a href="https://hivelancers.vercel.app/Login">
+            <button className={styles.secondaryButton}>
+            <FiFileText /> Publique seu Projeto
+            </button>
+          </a>
+        </div>
         </div>
         <div className={styles.reviews}>
         <Splide
@@ -37,7 +43,7 @@ export default function Reviews() {
             speed: 0.4, 
           },
           arrows: true,
-          pagination: true,
+          pagination: false,
         }}
         extensions={{ AutoScroll }}
         className={styles.carouselSpacing}

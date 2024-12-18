@@ -205,13 +205,26 @@
   
   @media (max-width: 768px) {
     .title {
-      font-size: 2rem;
-      padding: 0 1rem;
+      font-size: 25.95px;
+      padding: 0;
+    }
+
+    .description{
+      font-size: 12px;
     }
   
     .buttonGroup {
-      flex-direction: column;
       padding: 0 2rem;
+    }
+
+    .primaryButton{
+      font-size: 7.27px;
+      padding: 6.15px 10.62px 6.15px 10.62px;
+    }
+
+    .secondaryButton{
+      font-size: 7.27px;
+      padding: 6.15px 10.62px 6.15px 10.62px;
     }
   
     .browserFrame {

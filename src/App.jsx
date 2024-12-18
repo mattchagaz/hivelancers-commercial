@@ -23,7 +23,6 @@ function App() {
         <Process />
         <PrincipalAreas />
         <Timer />
-        <Cases />
         <Reviews />
         <Advantages />
         <Faq />

@@ -9,7 +9,7 @@
 
   .entireContent {
     width: 450px;
-    padding: 50px;
+    padding: 35.335px;
     background: linear-gradient(240deg, rgba(65, 105, 225, 0.26)10%, rgba(65,105,225,0) 50%, rgba(65,105,225,0) 100%);
     border-radius: 30px;
     border-top: 2px solid rgba(0, 96, 199, 0.529);
@@ -19,7 +19,7 @@
 
   .entireContent2 {
     width: 650px;
-    padding: 50px;
+    padding: 35.335px;
     border-radius: 30px;
     border-top: 2px solid rgba(0, 96, 199, 0.529);
     border-right: 2px solid rgba(0, 96, 199, 0.529);
@@ -72,7 +72,7 @@
     font-size: 2rem;
     font-weight: 600;
     color: transparent;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
     background: linear-gradient(90deg, #fff, #4169e1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -91,12 +91,16 @@
 
     .groupDivs{
       flex-direction: column;
-      gap: 30px;
+      gap: 13px;
       align-items: center;
     }
 
-    .description{
-      font-family: 10px;
+    .description {
+      font-size: 12px; 
+    }
+
+    .entireContent2 .description{
+      font-size: 10px;
     }
 
     .entireContent {
@@ -105,6 +109,8 @@
 
     .entireContent2 {
       width: 344.42px;
+      padding: 20.335px;
+      border-radius: 20px;
     }
 
     .aboutContent{
@@ -116,6 +122,10 @@
     .aboutSection{
       padding: 2rem 0 5rem 0;
       align-items: center;
+    }
+
+    .label::before {
+      width: 36px;
     }
 
   }

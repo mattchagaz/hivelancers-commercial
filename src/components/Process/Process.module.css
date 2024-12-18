@@ -116,6 +116,7 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.2s;
+  justify-content: center;
 }
 
 .button:hover {
@@ -169,11 +170,35 @@
 }
 
 @media (max-width: 768px) {
+
+  .processSection{
+    padding-top: 64px; 
+  }
+
+  .title{
+    font-size: 24px;
+  }
+
+  .description{
+    font-size: 12px;
+  }
+
+  .button{
+    width: 112.81px;
+    height: 25.68px;
+    padding: 8.34px 14.41px 8.34px 14.41px;
+    font-size: 7.85px;
+  }
+
   .leftContent{
     margin: 0;
   }
 
   .processContent{
     flex-direction: column;
+  }
+
+  .label::before {
+    width: 36px;
   }
 }

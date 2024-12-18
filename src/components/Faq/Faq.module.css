@@ -132,3 +132,24 @@
     color: #121212CC;
     line-height: 1.6;
   }
+
+  @media (max-width: 768px) {
+
+    .container{
+      padding: 64px 32px;
+    }
+
+    .title{
+      font-size: 20px;
+    }
+
+    .description{
+      font-size: 12px;
+    }
+
+    .button{
+      font-size: 7.17px;
+      padding: 6.07px 20.48px 6.07px 20.48px;
+    }
+
+  }
