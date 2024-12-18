@@ -133,6 +133,10 @@
   height: auto;
 }
 
+.laptopMobile {
+  display: none;
+}
+
 .screenContent {
   position: absolute;
   top: 4%; 
@@ -184,10 +188,8 @@
   }
 
   .button{
-    width: 112.81px;
-    height: 25.68px;
-    padding: 8.34px 14.41px 8.34px 14.41px;
-    font-size: 7.85px;
+    padding: 12.34px 25.41px;
+    font-size: 10px;
   }
 
   .leftContent{
@@ -200,5 +202,30 @@
 
   .label::before {
     width: 36px;
+  }
+
+  .laptop {
+    display: none; 
+  }
+
+  .laptopMobile {
+    display: block;
+    width: 100%; 
+    max-width: 1200px;
+    height: 330px; 
+  }
+
+  .accentTop {
+    width: 95px;
+    height: 110px;
+    top: -30px; 
+    right: 60px; 
+  }
+
+  .accentBottom {
+    width: 95px;
+    height: 45px;
+    top: 175px; 
+    left: 2px; 
   }
 }

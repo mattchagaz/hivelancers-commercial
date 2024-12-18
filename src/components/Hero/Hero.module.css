@@ -214,21 +214,28 @@
     }
   
     .buttonGroup {
+      display: flex;
+      
       padding: 0 2rem;
     }
 
     .primaryButton{
-      font-size: 7.27px;
-      padding: 6.15px 10.62px 6.15px 10.62px;
+      font-size: 8.9px;
+      padding: 12.15px 17.62px;
     }
 
     .secondaryButton{
-      font-size: 7.27px;
-      padding: 6.15px 10.62px 6.15px 10.62px;
+      font-size: 8.9px;
+      padding: 12.15px 17.62px;
     }
   
     .browserFrame {
       margin-top: 2rem;
+      height: 300px;
+    }
+
+    .browserContent img {
+      display: none;
     }
   }
   

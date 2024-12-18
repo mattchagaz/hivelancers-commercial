@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './process.module.css';
 import laptop from '../../assets/Macbook.png';
+import laptopMobile from '../../assets/Macbook-mobile.png';
 import screenContent1 from '../../assets/Screenshot 2024-12-09 at 16.14.08.png';
 import screenContent2 from '../../assets/Screenshot 2024-12-09 at 20.33.34.png';
 import screenContent3 from '../../assets/Screenshot 2024-12-09 at 16.13.30.png';
@@ -70,10 +71,14 @@ export default function ProcessSection() {
         <div className={styles.deviceMockup}>
           <img 
             src={laptop} 
-            alt="Laptop mockup" 
+            alt="Laptop Mockup" 
             className={styles.laptop}
           />
-          <AnimatePresence mode="wait">
+          <img src={laptopMobile}
+               alt="Laptop Mobile Mockup" 
+               className={styles.laptopMobile}
+          />
+          {/* <AnimatePresence mode="wait">
             <motion.img 
               key={activeStep}
               src={processes[activeStep].image}
@@ -84,7 +89,7 @@ export default function ProcessSection() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
             />
-          </AnimatePresence>
+          </AnimatePresence> */}
           <div className={`${styles.accent} ${styles.accentTop}`}></div>
           <div className={`${styles.accent} ${styles.accentBottom}`}></div>
         </div>
