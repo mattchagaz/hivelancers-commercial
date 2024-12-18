@@ -13,7 +13,7 @@ export default function Footer() {
             <a href="#About" className={styles.navLink}>Sobre Nós</a>
             <a href="#Process" className={styles.navLink}>Processos</a>
             <a href="#Categories" className={styles.navLink}>Categorias</a>
-            <a href="#Timer" className={styles.navLink}>Casos de Sucesso</a>
+            <a href="#Timer" className={styles.navLink}>Lançamento</a>
             <a href="#Reviews" className={styles.navLink}>Avaliações</a>
             <a href="#Advantages" className={styles.navLink}>Vantagens</a>
             <a href="#Support" className={styles.navLink}>Suporte</a>

@@ -199,18 +199,18 @@ overflow: hidden;
         }
 
         .primaryButton{
-            font-size: 7.27px;
-            padding: 6.15px 10.62px 6.15px 10.62px;
+            font-size: 11.27px;
+            padding: 8.15px 10.62px;
           }
       
           .secondaryButton{
-            font-size: 7.27px;
-            padding: 6.15px 10.62px 6.15px 10.62px;
+            font-size: 11.27px;
+            padding: 8.15px 10.62px;
           }
 
         .content{
             height: auto;
-            padding: 64px 32px 64px 32px;
+            padding: 64px 32px;
             margin: 0;
         }
 
@@ -220,7 +220,7 @@ overflow: hidden;
         }
         
         .slide{
-            width: 300px;
+            width: 350px;
             height: auto;
         }
 
