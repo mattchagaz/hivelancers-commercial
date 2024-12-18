@@ -10,7 +10,7 @@ import star from '../../assets/star.png'
 export default function Reviews() {
     return (
   
-      <section className={styles.reviewsSection}>
+      <section id='Reviews' className={styles.reviewsSection}>
         <div className={styles.content}>
           <h1 className={styles.title}>
             Avaliações

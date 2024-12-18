@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { IoClose  } from "react-icons/io5";
-import { HiOutlinePlusSm } from "react-icons/hi";
 import styles from './Faq.module.css'
 
 const faqData = [
@@ -123,20 +122,24 @@ export default function Faq() {
 
       <div className={styles.faqList}>
         {filteredFaqs.map((faq) => (
-          <div key={faq.id} className={styles.faqItem}>
-            <div
+           <div className={`${styles.faqItem} ${activeId === faq.id ? styles.active : ''}`} key={faq.id}>
+           <div
               className={`${styles.faqHeader} ${activeId === faq.id ? styles.active : ''}`}
               onClick={() => toggleFaq(faq.id)}
             >
               <span className={styles.faqText}>{faq.question}</span>
-              <span className={styles.toggleIcon}>
-                {activeId === faq.id ? <HiOutlinePlusSm /> : <IoClose />}
+              <span
+                className={`${styles.toggleIcon} ${
+                  activeId === faq.id ? styles.iconOpen : styles.iconClose
+                }`}
+              >
+                <IoClose />
               </span>
-            </div>
-            <div className={`${styles.faqContent} ${activeId === faq.id ? styles.active : ''}`}>
-              <p className={styles.faqAnswer}>{faq.answer}</p>
-            </div>
           </div>
+           <div className={`${styles.faqContent} ${activeId === faq.id ? styles.active : ''}`}>
+             <p className={styles.faqAnswer}>{faq.answer}</p>
+           </div>
+         </div>
         ))}
       </div>
     </div>

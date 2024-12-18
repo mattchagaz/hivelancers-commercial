@@ -38,7 +38,7 @@ export default function Timer() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div id='Timer' className={styles.container}>
       <h1 className={styles.title}>Contagem Regressiva</h1>
       <p className={styles.description}>
         Prepare-se para algo incrível! Nossa nova plataforma será lançada em breve.

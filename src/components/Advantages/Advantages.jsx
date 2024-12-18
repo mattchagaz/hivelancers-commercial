@@ -26,7 +26,7 @@ export default function Advantages() {
   ]
 
   return (
-    <section className={styles.container}>
+    <section id='Advantages' className={styles.container}>
       <h2 className={styles.title}>Vantagens</h2>
       <p className={styles.description}>
       Com nosso compromisso em excelência e inovação, garantimos benefícios exclusivos para nossos clientes. Nossa abordagem personalizada, profissionais experientes e soluções estratégicas proporcionam os melhores resultados para impulsionar o sucesso do seu negócio.

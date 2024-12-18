@@ -6,7 +6,7 @@ import HivelancersImage from '../../assets/Screenshot 2024-12-09 at 16.13.30.png
 export default function Hero() {
   return (
 
-    <div className={styles.container}>
+    <div id='Home' className={styles.container}>
       <div className={styles.content}>
         <h1 className={styles.title}>
           Conecte-se aos Melhores Freelancers em Minutos

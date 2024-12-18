@@ -1,9 +1,9 @@
 import styles from './Footer.module.css'
-import { FaInstagram, FaXTwitter, FaFacebook, FaYoutube, FaLinkedin } from 'react-icons/fa6'
+import { FaInstagram, FaXTwitter, FaTiktok, FaYoutube, FaLinkedin } from 'react-icons/fa6'
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer id='Support' className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.content}>
           <h2 className={styles.logo}>Hivelancers</h2>
@@ -34,7 +34,7 @@ export default function Footer() {
                 <FaXTwitter />
               </a>
               <a href="#" className={styles.socialLink}>
-                <FaFacebook />
+                <FaTiktok />
               </a>
               <a href="#" className={styles.socialLink}>
                 <FaYoutube />

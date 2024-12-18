@@ -1,4 +1,8 @@
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 1rem;
@@ -16,6 +20,7 @@
   .description {
     color: #121212;
     font-family: "Poppins", sans-serif;
+    max-width: 900px;
     font-size: 1rem;
     margin-bottom: 3.6rem;
     line-height: 1.6;
@@ -77,7 +82,11 @@
     border-radius: 10px;
     overflow: hidden;
   }
-  
+
+  .faqItem.active {
+    background-color: #3E73E60D;
+  }
+
   .faqHeader {
     display: flex;
     justify-content: space-between;
@@ -114,6 +123,15 @@
   .toggleIcon {
     font-size: 1.5rem;
     color: #3E73E6;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .iconOpen {
+    transform: rotate(45deg); 
+  }
+  
+  .iconClose {
+    transform: rotate(0deg); 
   }
   
   .faqText {
