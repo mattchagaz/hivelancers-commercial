@@ -1,6 +1,8 @@
-import { useState } from 'react'
-import { IoClose  } from "react-icons/io5";
-import styles from './Faq.module.css'
+import { useState, useEffect } from 'react';
+import { IoClose } from "react-icons/io5";
+import styles from './Faq.module.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const faqData = [
   {
@@ -76,30 +78,33 @@ const faqData = [
     category: 'support'
   }
 ]
-
 export default function Faq() {
-  const [activeId, setActiveId] = useState(null)
-  const [activeCategory, setActiveCategory] = useState('about')
+  const [activeId, setActiveId] = useState(null);
+  const [activeCategory, setActiveCategory] = useState('about');
 
   const toggleFaq = (id) => {
-    setActiveId(activeId === id ? null : id)
-  }
+    setActiveId(activeId === id ? null : id);
+  };
 
   const changeCategory = (category) => {
-    setActiveCategory(category)
-    setActiveId(null)
-  }
+    setActiveCategory(category);
+    setActiveId(null);
+  };
 
-  const filteredFaqs = faqData.filter(faq => faq.category === activeCategory)
+  const filteredFaqs = faqData.filter(faq => faq.category === activeCategory);
+
+  useEffect(() => {
+    AOS.init({ duration: 1200, easing: 'ease-in-out', once: true });
+  }, []);
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Perguntas Frequentes</h1>
-      <p className={styles.description}>
-      Tem dúvidas? Estamos aqui para ajudar! Obtenha respostas rápidas e claras sobre nossos serviços, processos e como podemos atender às suas necessidades.
+      <h1 className={styles.title} data-aos="fade-up">Perguntas Frequentes</h1> 
+      <p className={styles.description} data-aos="fade-up" data-aos-delay="200">
+        Tem dúvidas? Estamos aqui para ajudar! Obtenha respostas rápidas e claras sobre nossos serviços, processos e como podemos atender às suas necessidades.
       </p>
 
-      <div className={styles.buttonGroup}>
+      <div className={styles.buttonGroup} data-aos="fade-up" data-aos-delay="400">
         <button 
           className={`${styles.button} ${activeCategory === 'about' ? styles.primaryButton : styles.secondaryButton} ${activeCategory === 'about' ? styles.active : ''}`}
           onClick={() => changeCategory('about')}
@@ -120,29 +125,29 @@ export default function Faq() {
         </button>
       </div>
 
-      <div className={styles.faqList}>
+      <div data-aos="fade-up"  className={styles.faqList}>
         {filteredFaqs.map((faq) => (
-           <div className={`${styles.faqItem} ${activeId === faq.id ? styles.active : ''}`} key={faq.id}>
-           <div
+          <div 
+            className={`${styles.faqItem} ${activeId === faq.id ? styles.active : ''}`} 
+            key={faq.id} 
+          >
+            <div
               className={`${styles.faqHeader} ${activeId === faq.id ? styles.active : ''}`}
               onClick={() => toggleFaq(faq.id)}
             >
               <span className={styles.faqText}>{faq.question}</span>
               <span
-                className={`${styles.toggleIcon} ${
-                  activeId === faq.id ? styles.iconOpen : styles.iconClose
-                }`}
+                className={`${styles.toggleIcon} ${activeId === faq.id ? styles.iconOpen : styles.iconClose}`}
               >
                 <IoClose />
               </span>
+            </div>
+            <div className={`${styles.faqContent} ${activeId === faq.id ? styles.active : ''}`}>
+              <p className={styles.faqAnswer}>{faq.answer}</p>
+            </div>
           </div>
-           <div className={`${styles.faqContent} ${activeId === faq.id ? styles.active : ''}`}>
-             <p className={styles.faqAnswer}>{faq.answer}</p>
-           </div>
-         </div>
         ))}
       </div>
     </div>
-  )
+  );
 }
-

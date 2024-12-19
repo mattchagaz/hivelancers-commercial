@@ -1,14 +1,21 @@
+import React, { useEffect } from 'react'
 import styles from './Footer.module.css'
 import { FaInstagram, FaXTwitter, FaTiktok, FaYoutube, FaLinkedin } from 'react-icons/fa6'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 export default function Footer() {
+    useEffect(() => {
+      AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+    }, []);
+
   return (
     <footer id='Support' className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h2 className={styles.logo}>Hivelancers</h2>
+          <h2 className={styles.logo} data-aos="fade-up">Hivelancers</h2>
           
-          <nav className={styles.navigation}>
+          <nav className={styles.navigation} data-aos="fade-up" data-aos-delay="200">
             <a href="#Home" className={styles.navLink}>Inicio</a>
             <a href="#About" className={styles.navLink}>Sobre Nós</a>
             <a href="#Process" className={styles.navLink}>Processos</a>
