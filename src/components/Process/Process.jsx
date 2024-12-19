@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Process.module.css';
 import laptop from '../../assets/Macbook.png';
@@ -42,17 +44,30 @@ const processes = [
 export default function ProcessSection() {
   const [activeStep, setActiveStep] = useState(0);
 
+  useEffect(() => {
+    AOS.init({ duration: 1200 }); 
+  }, []);
+
   return (
     <section id='Process' className={styles.processSection}>
-      <div className={styles.processContent}>
+      <div 
+        className={styles.processContent}
+        data-aos="fade-up" 
+      >
         <div className={styles.leftContent}>
-          <div className={styles.label}>Processos</div>
+          <div 
+            className={styles.label} 
+            data-aos="fade-right"
+          >
+            Processos
+          </div>
           <div className={styles.steps}>
             {processes.map((_, index) => (
               <div 
                 key={index}
                 className={`${styles.step} ${index === activeStep ? styles.stepActive : ''}`}
                 onClick={() => setActiveStep(index)}
+             
               >
                 <div className={styles.stepNumber}>
                   {String(index + 1).padStart(2, '0')}
@@ -60,23 +75,39 @@ export default function ProcessSection() {
               </div>
             ))}
           </div>
-          <h2 className={styles.title}>{processes[activeStep].title}</h2>
-          <p className={styles.description}>
+          <h2 
+            className={styles.title}
+            data-aos="fade-left" 
+          >
+            {processes[activeStep].title}
+          </h2>
+          <p 
+            className={styles.description}
+            data-aos="fade-up" 
+          >
             {processes[activeStep].description}
           </p>
-          <a href="https://hivelancers.vercel.app/Login" target='_blank'>
+          <a 
+            href="https://hivelancers.vercel.app/Login" 
+            target='_blank'
+            data-aos="fade-right"
+          >
             <button className={styles.button}>Cadastrar-se Agora</button>
           </a>
         </div>
-        <div className={styles.deviceMockup}>
+        <div 
+          className={styles.deviceMockup}
+          data-aos="fade-in" 
+        >
           <img 
             src={laptop} 
             alt="Laptop Mockup" 
             className={styles.laptop}
           />
-          <img src={laptopMobile}
-               alt="Laptop Mobile Mockup" 
-               className={styles.laptopMobile}
+          <img 
+            src={laptopMobile}
+            alt="Laptop Mobile Mockup" 
+            className={styles.laptopMobile}
           />
           {/* <AnimatePresence mode="wait">
             <motion.img 
@@ -87,7 +118,7 @@ export default function ProcessSection() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.5 }}
             />
           </AnimatePresence> */}
           <div className={`${styles.accent} ${styles.accentTop}`}></div>

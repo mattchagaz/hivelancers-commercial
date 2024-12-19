@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import styles from './Timer.module.css';
 
 export default function Timer() {
@@ -10,6 +13,8 @@ export default function Timer() {
   });
 
   useEffect(() => {
+    AOS.init({ duration: 1200 });
+
     const targetDate = new Date('2025-06-25T23:59:59').getTime();
 
     const updateCountdown = () => {
@@ -35,25 +40,76 @@ export default function Timer() {
   }, []);
 
   return (
-    <div id='Timer' className={styles.container}>
+    <div id="Timer" className={styles.container} data-aos="fade-up">
       <div className={styles.content}>
-        <h1 className={styles.title}>Contagem Regressiva</h1>
-        <p className={styles.description}>
+        <h1 className={styles.title} data-aos="fade-right">Contagem Regressiva</h1>
+        <p className={styles.description} data-aos="fade-left">
           Prepare-se para algo incrível! Nossa nova plataforma será lançada em breve.
           Fique atento para não perder nenhuma novidade.
         </p>
 
-        <div className={styles.timerContainer}>
-          {Object.entries(timeLeft).map(([unit, value]) => (
-            <div key={unit} className={styles.timerBox}>
-              <div className={styles.number}>{value}</div>
-              <div className={styles.label}>{unit.charAt(0).toUpperCase() + unit.slice(1)}</div>
-            </div>
-          ))}
-        </div>
-        <a href="https://hivelancers.vercel.app/Signup" target='_blank'><button className={styles.createAccountButton}>CRIAR CONTA</button></a>
+        <motion.div 
+          className={styles.timerContainer} 
+          initial={{ opacity: 0 }} 
+          animate={{ opacity: 1 }} 
+          transition={{ duration: 1 }}
+        >
+          {Object.entries(timeLeft).map(([unit, value]) => {
+            let animationDirection = 'zoom-in';
+            let initial = { opacity: 0 };
+            let animate = { opacity: 1 };
+            
+            if (unit === 'dias') {
+              animationDirection = 'fade-down';
+              initial = { y: -100, opacity: 0 };
+              animate = { y: 0, opacity: 1 }; 
+            } else if (unit === 'horas') {
+              animationDirection = 'fade-up';
+              initial = { y: 100, opacity: 0 };
+              animate = { y: 0, opacity: 1 }; 
+            } else if (unit === 'minutos') {
+              animationDirection = 'fade-down';
+              initial = { x: -100, opacity: 0 }; 
+              animate = { x: 0, opacity: 1 }; 
+            } else if (unit === 'segundos') {
+              animationDirection = 'fade-up';
+              initial = { x: 100, opacity: 0 };
+              animate = { x: 0, opacity: 1 }; 
+            }
+
+            return (
+              <div 
+                key={unit} 
+                className={styles.timerBox}
+                data-aos={animationDirection} 
+              >
+                <motion.div
+                  className={styles.timerContent}
+                  initial={initial}
+                  animate={animate}
+                  transition={{ duration: 0.5 }}
+                >
+                  <div className={styles.number}>{value}</div>
+                  <div className={styles.label}>
+                    {unit.charAt(0).toUpperCase() + unit.slice(1)}
+                  </div>
+                </motion.div>
+              </div>
+            );
+          })}
+        </motion.div>
+
+        <a href="https://hivelancers.vercel.app/Signup" target="_blank">
+          <motion.button 
+            className={styles.createAccountButton}
+            whileHover={{ scale: 1.1 }} 
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.3 }}
+          >
+            CRIAR CONTA
+          </motion.button>
+        </a>
       </div>
     </div>
   );
 }
-
