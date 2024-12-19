@@ -11,8 +11,12 @@ import Cases from './components/Cases/Cases'
 import Reviews from './components/Reviews/Reviews'
 import Timer from './components/Timer/Timer'
 import './App.css'
+import { MouseSmooth } from 'react-mouse-smooth';
 
 function App() {
+
+  MouseSmooth ({});
+
   return (
     <>
       <div className='container'>
