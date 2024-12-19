@@ -28,7 +28,7 @@ const Navbar = () => {
             >
                 {isMenuOpen ? <IoClose  /> : <CgMenuRight />}
             </button>
-            <nav className={`${styles.nav} ${isMenuOpen ? styles.navActive : ""}`}>
+            <nav data-aos="fade-down" data-aos-duration="700" className={`${styles.nav} ${isMenuOpen ? styles.navActive : ""}`}>
                 <ul className={styles.navItems}>
                     <li><a href="#Home">Início</a></li>
                     <li><a href="#About">Sobre nós</a></li>

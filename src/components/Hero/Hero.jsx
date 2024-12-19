@@ -1,20 +1,47 @@
+import React, { useState, useEffect } from 'react';
 import styles from './Hero.module.css'
+import { TypeAnimation } from 'react-type-animation';
 import { FaSearch } from "react-icons/fa";
 import { FiFileText } from "react-icons/fi";
 import HivelancersImage from '../../assets/Screenshot 2024-12-09 at 16.13.30.png'
 
 export default function Hero() {
-  return (
 
-    <div id='Home' className={styles.container}>
+  const [isBlurred, setIsBlurred] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsBlurred(false);
+    }, 2000); 
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
+   <div id='Home' className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>
-          Conecte-se aos Melhores Freelancers em Minutos
-        </h1>
-        <p className={styles.description}>
+         <h1 
+      className={`${styles.title} ${isBlurred ? styles.blurred : ''}`}
+    >
+      <TypeAnimation
+        sequence={[
+          'Conecte-se aos Melhores Freelancers em Minutos',
+          3000,
+          'Encontre Talentos Excepcionais Rapidamente',
+          3000,
+          'Impulsione Seus Projetos com Profissionais Qualificados',
+          3000,
+        ]}
+        wrapper="span"
+        speed={50}
+        repeat={0}
+        style={{ fontFamily: "Arial", display: 'inline-block' }}
+      />
+    </h1>
+        <p data-aos="fade-in" data-aos-duration="900" className={styles.description}>
           Deixe para trás a complicação de múltiplas plataformas. Encontre projetos, gerencie clientes e receba pagamentos diretamente no mesmo lugar.
           </p>
-        <div className={styles.buttonGroup}>
+        <div data-aos="fade-up" data-aos-duration="500" className={styles.buttonGroup}>
           <a href="https://hivelancers.vercel.app/Login" target='_blank'>
             <button className={styles.primaryButton}>
              <FaSearch /> Encontre Freelancers
