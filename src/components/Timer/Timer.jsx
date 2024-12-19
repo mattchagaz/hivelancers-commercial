@@ -51,7 +51,7 @@ export default function Timer() {
             </div>
           ))}
         </div>
-        <button className={styles.createAccountButton}>CRIAR CONTA</button>
+        <a href="https://hivelancers.vercel.app/Signup" target='_blank'><button className={styles.createAccountButton}>CRIAR CONTA</button></a>
       </div>
     </div>
   );

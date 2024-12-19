@@ -64,7 +64,7 @@ export default function ProcessSection() {
           <p className={styles.description}>
             {processes[activeStep].description}
           </p>
-          <a href="https://hivelancers.vercel.app/Login">
+          <a href="https://hivelancers.vercel.app/Login" target='_blank'>
             <button className={styles.button}>Cadastrar-se Agora</button>
           </a>
         </div>

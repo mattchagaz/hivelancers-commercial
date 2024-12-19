@@ -127,11 +127,11 @@
   }
 
   .iconOpen {
-    transform: rotate(45deg); 
+    transform: rotate(0deg); 
   }
   
   .iconClose {
-    transform: rotate(0deg); 
+    transform: rotate(45deg); 
   }
   
   .faqText {
