@@ -189,10 +189,43 @@
     }
 }
 
+.navbarScrolled .logo, .navbarScrolled .buttons {
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.navbarScrolled .menuMobileIcons {
+    margin-top: -10px; 
+}
+
+.navbarScrolled .nav {
+    top: 0;
+    transform: none;
+}
+
+.logoScrolled, .buttonsScrolled {
+    opacity: 0;
+    visibility: hidden;
+}
+
 @media (max-width: 768px) {
     .navbar {
         justify-content: space-between;
         padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .logoScrolled {
+        opacity: 0;
+    }
+
+    .buttonsScrolled {
+        display: none;
     }
 
     .menuMobileIcons {
