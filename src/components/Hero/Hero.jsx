@@ -33,15 +33,15 @@ export default function Hero() {
           3000,
         ]}
         wrapper="span"
-        speed={50}
+        speed={30}
         repeat={0}
         style={{ fontFamily: "Arial", display: 'inline-block' }}
       />
     </h1>
-        <p data-aos="fade-in" data-aos-duration="900" className={styles.description}>
+        <p data-aos="fade-in" data-aos-duration="1500" className={styles.description}>
           Deixe para trás a complicação de múltiplas plataformas. Encontre projetos, gerencie clientes e receba pagamentos diretamente no mesmo lugar.
           </p>
-        <div data-aos="fade-up" data-aos-duration="500" className={styles.buttonGroup}>
+        <div data-aos="fade-up" data-aos-duration="1200" className={styles.buttonGroup}>
           <a href="https://hivelancers.vercel.app/Login" target='_blank'>
             <button className={styles.primaryButton}>
              <FaSearch /> Encontre Freelancers
@@ -54,7 +54,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div className={styles.browserFrame}>
+      <div  data-aos="zoom-in" data-aos-duration="1200" className={styles.browserFrame}>
         <div className={styles.browserHeader}>
           <div className={styles.browserControls}>
             <span className={styles.browserDot}></span>
