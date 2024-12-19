@@ -94,7 +94,7 @@ export default function Faq() {
   const filteredFaqs = faqData.filter(faq => faq.category === activeCategory);
 
   useEffect(() => {
-    AOS.init({ duration: 1200, easing: 'ease-in-out', once: true });
+    AOS.init({ duration: 1200, easing: 'ease-in-out'});
   }, []);
 
   return (

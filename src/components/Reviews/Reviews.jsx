@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 
 export default function Reviews() {
   useEffect(() => {
-    AOS.init({ duration: 1200, easing: 'ease-in-out', once: true });
+    AOS.init({ duration: 1200, easing: 'ease-in-out'});
   }, []);
 
   return (

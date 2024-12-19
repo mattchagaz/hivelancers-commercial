@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 export default function Footer() {
     useEffect(() => {
-      AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+      AOS.init({ duration: 1200});
     }, []);
 
   return (
@@ -16,7 +16,7 @@ export default function Footer() {
           <h2 className={styles.logo} data-aos="fade-up">Hivelancers</h2>
           
           <nav className={styles.navigation} data-aos="fade-up" data-aos-delay="200">
-            <a href="#Home" className={styles.navLink}>Inicio</a>
+            <a href="#Home" className={styles.navLink} >Inicio</a>
             <a href="#About" className={styles.navLink}>Sobre Nós</a>
             <a href="#Process" className={styles.navLink}>Processos</a>
             <a href="#Categories" className={styles.navLink}>Categorias</a>
@@ -27,7 +27,7 @@ export default function Footer() {
           </nav>
 
           <div className={styles.bottom}>
-            <div className={styles.legal}>
+            <div className={styles.legal} >
               <span>Todos os direitos reservados ©2024</span>
               <a href="/privacidade">Políticas de Privacidade</a>
               <a href="/termos">Termos de Uso</a>

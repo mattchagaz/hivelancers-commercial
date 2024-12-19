@@ -13,7 +13,7 @@ export default function Timer() {
   });
 
   useEffect(() => {
-    AOS.init({ duration: 1200 });
+    AOS.init({ duration: 1200, easing: 'ease-in-out'});
 
     const targetDate = new Date('2025-06-25T23:59:59').getTime();
 

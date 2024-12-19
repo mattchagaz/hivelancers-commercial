@@ -45,7 +45,7 @@ export default function ProcessSection() {
   const [activeStep, setActiveStep] = useState(0);
 
   useEffect(() => {
-    AOS.init({ duration: 1200 }); 
+    AOS.init({ duration: 1200, easing: 'ease-in-out'}); 
   }, []);
 
   return (

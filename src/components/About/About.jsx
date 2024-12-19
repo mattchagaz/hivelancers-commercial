@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 export default function AboutSection() {
   useEffect(() => {
-    AOS.init({ duration: 1200 }); 
+    AOS.init({ duration: 1200, easing: 'ease-in-out'}); 
   }, []);
 
   return (

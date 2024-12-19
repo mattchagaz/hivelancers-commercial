@@ -8,7 +8,7 @@ import styles from './PrincipalAreas.module.css';
 
 export default function PrincipalAreas() {
   useEffect(() => {
-    AOS.init({ duration: 1200 }); 
+    AOS.init({ duration: 1200, easing: 'ease-in-out'}); 
   }, []);
 
   return (
