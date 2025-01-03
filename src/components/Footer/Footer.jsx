@@ -28,7 +28,7 @@ export default function Footer() {
 
           <div className={styles.bottom}>
             <div className={styles.legal} >
-              <span>Todos os direitos reservados ©2024</span>
+              <span>Todos os direitos reservados ©2025</span>
               <a href="/privacidade">Políticas de Privacidade</a>
               <a href="/termos">Termos de Uso</a>
             </div>
