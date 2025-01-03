@@ -57,22 +57,22 @@ const Navbar = () => {
           <li><a href="#Advantages">Vantagens</a></li>
           <li><a href="#Support">Suporte</a></li>
           <div className={styles.buttonsMobile}>
-            <a href="https://hivelancers.vercel.app/Signup" target="_blank">
+            <a href="https://app.hivelancers.com/Signup" target="_blank">
               <button className={styles.btnSignup}>
                 Cadastrar <LuArrowUpRight />
               </button>
             </a>
-            <a href="https://hivelancers.vercel.app/Login" target="_blank">
+            <a href="https://app.hivelancers.com/Login" target="_blank">
               <button className={styles.btnLogin}>Entrar</button>
             </a>
           </div>
         </ul>
       </nav>
       <div className={`${styles.buttons} ${scrolling ? styles.buttonsScrolled : ""}`}>
-        <a href="https://hivelancers.vercel.app/Login" target="_blank">
+        <a href="https://app.hivelancers.com/Login" target="_blank">
           <button className={styles.btnLogin}>Entrar</button>
         </a>
-        <a href="https://hivelancers.vercel.app/Signup" target="_blank">
+        <a href="https://app.hivelancers.com/Signup" target="_blank">
           <button className={styles.btnSignup}>
             Cadastrar <LuArrowUpRight />
           </button>

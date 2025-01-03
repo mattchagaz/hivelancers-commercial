@@ -22,12 +22,12 @@ export default function Reviews() {
           Na Hivelancers, garantimos qualidade, eficiência e a conexão entre empresas e os melhores freelancers do mercado. Veja o que alguns de nossos clientes dizem sobre os projetos entregues com excelência e confiança.
         </p>
         <div className={styles.buttonGroup}>
-          <a href="https://hivelancers.vercel.app/Login" target='_blank'>
+          <a href="https://app.hivelancers.com/Login" target='_blank'>
             <button className={styles.primaryButton} data-aos="zoom-in">
               <FaSearch /> Encontre Freelancers
             </button>
           </a>
-          <a href="https://hivelancers.vercel.app/Login" target='_blank'>
+          <a href="https://app.hivelancers.com/Login" target='_blank'>
             <button className={styles.secondaryButton} data-aos="zoom-in">
               <FiFileText /> Publique seu Projeto
             </button>

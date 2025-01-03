@@ -99,7 +99,7 @@ export default function Timer() {
           })}
         </motion.div>
 
-        <a href="https://hivelancers.vercel.app/Signup" target="_blank">
+        <a href="https://app.hivelancers.com/Signup" target="_blank">
           <motion.button 
             className={styles.createAccountButton}
             whileHover={{ scale: 1.1 }} 

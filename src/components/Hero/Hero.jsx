@@ -42,12 +42,12 @@ export default function Hero() {
           Deixe para trás a complicação de múltiplas plataformas. Encontre projetos, gerencie clientes e receba pagamentos diretamente no mesmo lugar.
           </p>
         <div data-aos="fade-up" data-aos-duration="1200" className={styles.buttonGroup}>
-          <a href="https://hivelancers.vercel.app/Login" target='_blank'>
+          <a href="https://app.hivelancers.com/Login" target='_blank'>
             <button className={styles.primaryButton}>
              <FaSearch /> Encontre Freelancers
             </button>
           </a>
-          <a href="https://hivelancers.vercel.app/Login" target='_blank'>
+          <a href="https://app.hivelancers.com/Login" target='_blank'>
             <button className={styles.secondaryButton}>
             <FiFileText /> Publique seu Projeto
             </button>
@@ -62,7 +62,7 @@ export default function Hero() {
             <span className={styles.browserDot}></span>
           </div>
           <div className={styles.browserAddressBar}>
-            <a href="https://hivelancers.vercel.app/Login" target='_blank'>
+            <a href="https://app.hivelancers.com/Login" target='_blank'>
               <p className={styles.browserAddressContent}>www.hivelancers.com</p>
             </a>
           </div>
