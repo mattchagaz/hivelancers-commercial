@@ -1,0 +1,200 @@
+.container {
+    min-height: 100vh;
+    background-image: url(../../assets/backgroound-advantages.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .content {
+    z-index: 10;
+  }
+  
+  .title {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #f87171, #f43f5e, #e11d48);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-in, glow 1.5s ease-in-out infinite alternate;
+  }
+  
+  .description {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    max-width: 800px;
+    margin-bottom: 3rem;
+    color: #f8fafc;
+    line-height: 1.6;
+    animation: slideUp 1s ease-out;
+    font-size: 1.2rem;
+  }
+  
+  .timerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    animation: scaleIn 0.5s ease-out;
+  }
+  
+  .timerBox {
+    background: rgba(244, 63, 94, 0.1);
+    border: 2px solid rgba(244, 63, 94, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    min-width: 140px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+  }
+  
+  .timerBox:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: #f87171;
+  }
+  
+  .number {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #f87171;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(248, 113, 113, 0.5);
+  }
+  
+  .label {
+    color: #e5e7eb;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  
+  .createAccountButton {
+    background: rgba(244, 63, 94, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(244, 63, 94, 0.3);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 875rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in 0.5s backwards;
+  }
+  
+  .createAccountButton:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(244, 63, 94, 0.3);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 2px #f87171, 0 0 5px #f87171;
+    }
+    to {
+      text-shadow: 0 0 2px #f87171, 0 0 10px #f87171;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 3rem;
+    }
+  
+    .timerContainer {
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .timerBox {
+      min-width: 120px;
+      padding: 2rem;
+    }
+  
+    .title {
+      font-size: 3rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .number {
+      font-size: 2.5rem;
+    }
+  
+    .createAccountButton {
+      font-size: 0.875rem;
+      padding: 0.8rem 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .timerBox {
+      min-width: 100px;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 0.85rem;
+    }
+  
+    .number {
+      font-size: 2rem;
+    }
+  
+    .createAccountButton {
+      font-size: 0.7rem;
+      padding: 0.7rem 1.4rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+  
