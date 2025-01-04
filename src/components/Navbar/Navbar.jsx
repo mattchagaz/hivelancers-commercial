@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrolling, setScrolling] = useState(false); // Para controlar o efeito de scroll
+  const [scrolling, setScrolling] = useState(false); 
 
   useEffect(() => {
     AOS.init();
@@ -16,16 +16,14 @@ const Navbar = () => {
     // Detecta o scroll da página
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setScrolling(true); // Ativa o estado de rolagem
+        setScrolling(true); 
       } else {
-        setScrolling(false); // Desativa o estado de rolagem
+        setScrolling(false); 
       }
     };
 
-    // Adiciona o ouvinte de evento de scroll
     window.addEventListener("scroll", handleScroll);
 
-    // Remove o ouvinte de evento ao desmontar
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
