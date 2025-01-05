@@ -21,14 +21,14 @@ export default function Reviews() {
         <p className={styles.description} data-aos="fade-up">
           Na Hivelancers, garantimos qualidade, eficiência e a conexão entre empresas e os melhores freelancers do mercado. Veja o que alguns de nossos clientes dizem sobre os projetos entregues com excelência e confiança.
         </p>
-        <div className={styles.buttonGroup}>
+        <div className={styles.buttonGroup} data-aos="zoom-in">
           <a href="https://app.hivelancers.com/Login" target='_blank'>
-            <button className={styles.primaryButton} data-aos="zoom-in">
+            <button className={styles.primaryButton}>
               <FaSearch /> Encontre Freelancers
             </button>
           </a>
           <a href="https://app.hivelancers.com/Login" target='_blank'>
-            <button className={styles.secondaryButton} data-aos="zoom-in">
+            <button className={styles.secondaryButton}>
               <FiFileText /> Publique seu Projeto
             </button>
           </a>
