@@ -12,22 +12,21 @@ export default function Hero() {
   const [isBlurred, setIsBlurred] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
 
-  // Hook para detectar o tamanho da tela
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Definir mobile quando a largura for menor ou igual a 768px
+      setIsMobile(window.innerWidth <= 768); 
     };
 
-    handleResize(); // Verificar o tamanho da tela no carregamento
-    window.addEventListener('resize', handleResize); // Atualizar ao redimensionar
+    handleResize(); 
+    window.addEventListener('resize', handleResize); 
 
-    return () => window.removeEventListener('resize', handleResize); // Limpar listener
+    return () => window.removeEventListener('resize', handleResize); 
   }, []);
 
   useEffect(() => {
 
     AOS.init({
-      offset: 0, // Inicia a animação sem depender do scroll
+      offset: 0, 
       duration: 1200, 
       once: true, 
     });
