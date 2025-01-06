@@ -3,6 +3,8 @@ import styles from './Hero.module.css';
 import { TypeAnimation } from 'react-type-animation';
 import { FaSearch } from "react-icons/fa";
 import { FiFileText } from "react-icons/fi";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import HivelancersImage from '../../assets/Screenshot 2024-12-09 at 16.14.08.png';
 import HivelancersImageMobile from '../../assets/iphone-mockup.png';
 
@@ -23,6 +25,14 @@ export default function Hero() {
   }, []);
 
   useEffect(() => {
+
+    AOS.init({
+      offset: 0, // Inicia a animação sem depender do scroll
+      duration: 1200, 
+      once: true, 
+    });
+
+
     const timer = setTimeout(() => {
       setIsBlurred(false);
     }, 2000);
@@ -66,9 +76,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Condicional para exibir o conteúdo certo */}
       {isMobile ? (
-        <div data-aos="zoom-in" data-aos-duration="1200" className={styles.mobileImageContainer}>
+        <div className={styles.mobileImageContainer}>
           <img
             src={HivelancersImageMobile}
             alt="Hivelancers mobile mockup"
