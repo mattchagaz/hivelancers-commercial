@@ -58,7 +58,7 @@ export default function Hero() {
       </div>
 
       {isMobile ? (
-        <div data-aos="zoom-in" className={styles.mobileImage}>
+        <div className={styles.mobileImage}>
           <img 
             src={MobileImage} 
             alt="Mobile Interface Mockup" 
