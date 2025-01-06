@@ -296,11 +296,10 @@
   @media screen and (max-width: 394px) and (max-height: 794px) {  
     .mobileScreenshot {
       position: absolute;
-      top: -10%; 
+      top: -10.3%; 
       left: 21.9%; 
       width: 185px; 
       height: auto; 
-      border-radius: 30px; 
     }
   }
   
