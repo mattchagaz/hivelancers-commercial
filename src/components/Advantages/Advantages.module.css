@@ -74,7 +74,22 @@
   margin: -10px;
 }
 
+.fullDescription {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #F2F2F2BF;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  max-width: 270px;
+}
+
 @media (max-width: 768px) {
+
+  .fullDescription {
+    font-size: 12px;
+    max-width: 200px;
+  }
 
   .title{
     font-size: 27px;

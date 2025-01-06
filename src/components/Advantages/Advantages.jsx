@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { CreditCard, HeadphonesIcon, Users, Receipt } from 'lucide-react'
+import { CreditCard, HeadphonesIcon, Users, Receipt, Shield, Globe } from 'lucide-react'
 import styles from './Advantages.module.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -7,24 +7,28 @@ import 'aos/dist/aos.css';
 export default function Advantages() {
   const features = [
     {
-      icon: <CreditCard className={styles.icon} />,
-      title: 'Segurança nos',
-      description: 'Pagamentos'
-    },
-    {
-      icon: <HeadphonesIcon className={styles.icon} />,
-      title: 'Suporte ao',
-      description: 'Cliente'
-    },
-    {
       icon: <Users className={styles.icon} />,
-      title: 'Acesso aos',
-      description: 'Melhores Freelas'
+      title: 'Talentos',
+      description: 'Verificados',
+      fullDescription: 'Conectamos você com freelancers qualificados e verificados, garantindo profissionais de alta qualidade para seu projeto.'
+    },
+    {
+      icon: <Shield className={styles.icon} />,
+      title: 'Segurança',
+      description: 'Garantida',
+      fullDescription: 'Sistema de pagamentos protegido. Seu dinheiro só é liberado após a aprovação do trabalho entregue.'
+    },
+    {
+      icon: <Globe className={styles.icon} />,
+      title: 'Projetos',
+      description: 'Diversos',
+      fullDescription: 'Acesso a uma ampla variedade de projetos e oportunidades em diferentes áreas de atuação.'
     },
     {
       icon: <Receipt className={styles.icon} />,
       title: 'Menores',
-      description: 'Taxas'
+      description: 'Taxas',
+      fullDescription: 'Oferecemos as taxas mais competitivas do mercado, maximizando seus ganhos em cada projeto.'
     }
   ];
 
@@ -36,7 +40,7 @@ export default function Advantages() {
     <section id='Advantages' className={styles.container}>
       <h2 className={styles.title} data-aos="fade-up">Vantagens</h2> 
       <p className={styles.description} data-aos="fade-up" data-aos-delay="200">
-        Com nosso compromisso em excelência e inovação, garantimos benefícios exclusivos para nossos clientes. Nossa abordagem personalizada, profissionais experientes e soluções estratégicas proporcionam os melhores resultados para impulsionar o sucesso do seu negócio.
+      Com nosso compromisso em excelência e inovação, garantimos benefícios exclusivos para nossos clientes. Nossa abordagem personalizada, profissionais experientes e soluções estratégicas proporcionam os melhores resultados para impulsionar o sucesso do seu negócio.
       </p>
       <div className={styles.features}>
         {features.map((feature, index) => (
@@ -51,6 +55,7 @@ export default function Advantages() {
             </div>
             <h3 className={styles.featureTitle}>{feature.title}</h3>
             <p className={styles.featureDescription}>{feature.description}</p>
+            <p className={styles.fullDescription}>{feature.fullDescription}</p>
           </div>
         ))}
       </div>
