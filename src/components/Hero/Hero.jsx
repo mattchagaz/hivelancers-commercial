@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Hero.module.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import { TypeAnimation } from 'react-type-animation';
 import { FaSearch } from "react-icons/fa";
 import { FiFileText } from "react-icons/fi";
@@ -11,6 +13,12 @@ export default function Hero() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    AOS.init({
+      duration: 1200,
+      offset: 0,
+      once: true,
+    })
+
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768); // Limite de largura para mobile
     };
@@ -58,7 +66,7 @@ export default function Hero() {
       </div>
 
       {isMobile ? (
-        <div data-aos="zoom-in" className={styles.mobileImage}>
+        <div data-aos="zoom-in" data-aos-offset="0" data-aos-duration="1200" className={styles.mobileImage}>
           <img 
             src={MobileImage} 
             alt="Mobile Interface Mockup" 
