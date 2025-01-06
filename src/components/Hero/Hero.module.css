@@ -226,7 +226,7 @@
     left: 23%; 
     width: 198px; 
     height: auto; 
-    border-radius: 30px; 
+    border-radius: 27px; 
   }
   
   .browserFrame {
@@ -297,7 +297,7 @@
     .mobileScreenshot {
       position: absolute;
       top: -10.3%; 
-      left: 21.9%; 
+      left: 21.92%; 
       width: 185px; 
       height: auto; 
     }
