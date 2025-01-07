@@ -88,13 +88,13 @@ export default function Faq() {
 
   const changeCategory = (category) => {
     setActiveCategory(category);
-    setActiveId(null);
+    setActiveId(null); 
   };
 
   const filteredFaqs = faqData.filter(faq => faq.category === activeCategory);
 
   useEffect(() => {
-    AOS.init({ duration: 1200, easing: 'ease-in-out'});
+    AOS.init({ duration: 1200, easing: 'ease-in-out' });
   }, []);
 
   return (
@@ -125,11 +125,11 @@ export default function Faq() {
         </button>
       </div>
 
-      <div data-aos="fade-up"  className={styles.faqList}>
+      <div className={styles.faqList}>
         {filteredFaqs.map((faq) => (
           <div 
             className={`${styles.faqItem} ${activeId === faq.id ? styles.active : ''}`} 
-            key={faq.id} 
+            key={faq.id}
           >
             <div
               className={`${styles.faqHeader} ${activeId === faq.id ? styles.active : ''}`}
@@ -142,7 +142,10 @@ export default function Faq() {
                 <IoClose />
               </span>
             </div>
-            <div className={`${styles.faqContent} ${activeId === faq.id ? styles.active : ''}`}>
+            <div className={`${styles.faqContent} ${activeId === faq.id ? styles.active : ''}`} 
+              data-aos={activeId === faq.id ? "fade-in" : ""}
+              data-aos-duration="300"
+            >
               <p className={styles.faqAnswer}>{faq.answer}</p>
             </div>
           </div>
