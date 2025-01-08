@@ -7,6 +7,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import HivelancersImage from '../../assets/Screenshot 2024-12-09 at 16.14.08.png';
 import HivelancersImageMobile from '../../assets/iphone-mockup.png';
+import HivelancersImageMobile2 from '../../assets/iphone-mockup2.png'
 
 export default function Hero() {
   const [isBlurred, setIsBlurred] = useState(true);
@@ -78,7 +79,7 @@ export default function Hero() {
       {isMobile ? (
         <div className={styles.mobileImageContainer}>
           <img
-            src={HivelancersImageMobile}
+            src={HivelancersImageMobile2}
             alt="Hivelancers mobile mockup"
             className={styles.mobileImage}
           />
