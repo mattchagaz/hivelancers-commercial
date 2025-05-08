@@ -15,7 +15,7 @@ export default function Timer() {
   useEffect(() => {
     AOS.init({ duration: 1200, easing: 'ease-in-out'});
 
-    const targetDate = new Date('2025-06-25T23:59:59').getTime();
+    const targetDate = new Date('2025-09-25T23:59:59').getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
